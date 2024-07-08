@@ -1,0 +1,45 @@
+
+.accordion {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
+}
+
+.accordionItem {
+    border-bottom: 1px solid #ddd;
+    
+.button {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+}
+
+
+.accordionButton::before {
+    content: '+';
+    font-size: 24px;
+}
+
+.accordionButton.active::before {
+    content: '-';
+    color: red;
+}
+
+.accordionContent {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    padding: 0 15px;
+}
+
+.accordionContent p {
+    margin: 15px 0;
+}

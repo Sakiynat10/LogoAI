@@ -1,0 +1,30 @@
+.deliver-cards{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    gap: 40px;
+    .deliver-card{
+        max-width: 250px;
+        width: 100%;
+        img{
+            margin-bottom: 10px;
+        }
+        h3{
+            color: #000;
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 100%;
+            margin-bottom: 10px; /* 18px */
+        }
+        p{
+            color: #000;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%; /* 19.6px */
+            opacity: 0.5;
+        }
+    }
+}
