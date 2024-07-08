@@ -385,7 +385,6 @@
                     max-width: 380px;
                     border-top-left-radius: 0;
                     border-bottom-left-radius: 0;
-                    border-left: none;
                     color: black;
                     font-family: Inter;
                     font-size: 18px;
@@ -403,6 +402,7 @@
                     padding-left: 30px;
                     border: 1px solid rgba(140, 154, 163, 0.50);
                     margin-bottom: 20px;
+                    border-right: none;
                     border-top-right-radius: 0;
                     border-bottom-right-radius: 0;
                     color: black;
@@ -411,6 +411,10 @@
                     font-style: normal;
                     font-weight: 400;
                     line-height: 100%;
+                    option{
+                        margin-right: 20px;
+                        padding-right: 20px;
+                    }
                 }
             }
             button{

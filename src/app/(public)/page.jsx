@@ -4,6 +4,7 @@ import "./style.scss";
 import Slider from "./../../components/truck-slider/index";
 import DeliverCards from "./../../components/deliver/index";
 import Accordion from "@/components/accordion";
+import ServiceCards from './../../components/service-cards/index';
 
 export default function Home() {
   return (
@@ -18,11 +19,13 @@ export default function Home() {
                 className="input"
                 type="text"
                 placeholder="Введите пункт отправления"
+                required
               />
               <input
                 className="input"
                 type="text"
                 placeholder="Введите пункт назначения"
+                required
               />
               <img className="plug-input" src="/plugin.svg" alt="plugin" />
               <div className="contact-group">
@@ -38,28 +41,8 @@ export default function Home() {
         </div>
       </section>
       <section id="service">
-        <div className="service-content container">
-          <div className="service-card">
-            <h2>Создайте заказ</h2>
-            <p>
-              Сервис автоматически расчитает стоимость доставки за минуту и
-              предложит услуги более 12 500 надежных перевозчиков
-            </p>
-            <img src="/service-1.png" alt="service" />
-          </div>
-          <div className="service-card">
-            <h2>Отслеживайте доставку</h2>
-            <p>
-              Сервис автоматически расчитает стоимость доставки за минуту и
-              предложит
-            </p>
-            <img src="/service-2.png" alt="service" />
-          </div>
-          <div className="service-card">
-            <h2>СПолучаете свой груз</h2>
-            <p>Сервис автоматически расчитает стоимость доста</p>
-            <img src="/service-3.png" alt="service" />
-          </div>
+        <div className="container">
+          <ServiceCards/>
         </div>
       </section>
       <section id="range">
@@ -112,6 +95,7 @@ export default function Home() {
           <h1>
             У вас есть вопрос?<span>?</span>
           </h1>
+          <Accordion/>
         </div>
       </section>
       <section id="contact">

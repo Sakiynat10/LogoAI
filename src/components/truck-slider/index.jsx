@@ -6,7 +6,7 @@ import { unstable_HistoryRouter } from 'react-router-dom';
 
 const Slider = () => {
   const [value , setValue] = useState()
-  const [value1 , setValue1] = useState()
+  const [value1 , setValue1] = useState(20)
 
   const getRangeValue = (e) => {
     setValue(value1 | +e?.target?.value)
