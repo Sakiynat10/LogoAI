@@ -1,10 +1,15 @@
-import Image from "next/image";
 import { Fragment } from "react";
 import "./style.scss";
 import Slider from "./../../components/truck-slider/index";
 import DeliverCards from "./../../components/deliver/index";
 import Accordion from "@/components/accordion";
-import ServiceCards from './../../components/service-cards/index';
+import ServiceCards from "./../../components/service-cards/index";
+
+export const metadata = {
+  title: "LOGOAI ,LogoAi , LogoAI ,Транспортная компания нового поколения",
+  description:
+    "Мгновенный расчет цены на грузоперевозку , Hyundai Mighty ,How much type of truck your company,We are offering the 5 types of delivery trucks. You can choose the truck which suits. How much type of truck your company , (555)555-1234 ,Сервис автоматически расчитает стоимость доставки за минуту и предложит",
+};
 
 export default function Home() {
   return (
@@ -42,7 +47,7 @@ export default function Home() {
       </section>
       <section id="service">
         <div className="container">
-          <ServiceCards/>
+          <ServiceCards />
         </div>
       </section>
       <section id="range">
@@ -95,14 +100,17 @@ export default function Home() {
           <h1>
             У вас есть вопрос?<span>?</span>
           </h1>
-          <Accordion/>
+          <Accordion />
         </div>
       </section>
       <section id="contact">
         <div className="contact-content container">
           <div className="contact-infos">
             <h1>Свяжитесь с нами</h1>
-            <p>We are offering the 5 types of delivery trucks. You can choose the truck which suits. How much type of truck your company</p>
+            <p>
+              We are offering the 5 types of delivery trucks. You can choose the
+              truck which suits. How much type of truck your company
+            </p>
             <form action="">
               <input type="text" required placeholder="Ваша Имя" />
               <div className="input-group">
@@ -125,7 +133,14 @@ export default function Home() {
             <span>Телефон:</span>
             <h3>(555)555-1234</h3>
           </div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23978.982155121208!2d69.24848709482929!3d41.30075356785089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ad31dd71f6f%3A0xe85aa2db6d49bad3!2sCity%20Department%20of%20Internal%20Affairs!5e0!3m2!1sen!2s!4v1720392290615!5m2!1sen!2s" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23978.982155121208!2d69.24848709482929!3d41.30075356785089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ad31dd71f6f%3A0xe85aa2db6d49bad3!2sCity%20Department%20of%20Internal%20Affairs!5e0!3m2!1sen!2s!4v1720392290615!5m2!1sen!2s"
+            width="600"
+            height="450"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
           <div className="media-group">
             <a href="#link">
               <img src="/media-1.svg" alt="media" />
