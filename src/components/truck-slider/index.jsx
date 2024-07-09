@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react'
 import "./style.scss";
-import { unstable_HistoryRouter } from 'react-router-dom';
 
 const Slider = () => {
   const [value , setValue] = useState()

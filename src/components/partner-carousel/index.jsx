@@ -33,7 +33,7 @@ export default function PartnerCarousel() {
         className="mySwiper"
       >
             {partnerData.map((el,i) => (
-            <SwiperSlide className={i%2===0 ?"partner-card odd":"partner-card even"}>
+            <SwiperSlide key={i} className={i%2===0 ?"partner-card odd":"partner-card even"}>
               <div>
                 <h2>{el.h1}</h2>
                 <img src={el.src} alt={el.h1} />
