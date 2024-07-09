@@ -23,30 +23,43 @@ const AccordionItem = ({title , content}) => {
 const items = [
     {
         title:'How much type of truck your company?' , 
-        content:"We are offering the 5 types of delivery trucks. You can choose the truck which suits. How much type of truck your company"
+        content:"1.We are offering the 5 types of delivery trucks. You can choose the truck which suits. How much type of truck your company"
     },
     {
         title: 'How much type of truck your company?',
-        content: 'We are offering the 5 types of delivery trucks. You can choose the truck which suits. How much type of truck your company'
+        content: '2.We are offering the 5 types of delivery trucks. You can choose the truck which suits. How much type of truck your company'
     },
     {
         title: 'How much type of truck your company?',
-        content: 'We are offering the 5 types of delivery trucks. You can choose the truck which suits. How much type of truck your company'
+        content: '3.We are offering the 5 types of delivery trucks. You can choose the truck which suits. How much type of truck your company'
     },
     {
         title: 'How much type of truck your company?',
-        content: 'We are offering the 5 types of delivery trucks. You can choose the truck which suits. How much type of truck your company'
+        content: '4.We are offering the 5 types of delivery trucks. You can choose the truck which suits. How much type of truck your company'
+    },
+    {
+        title: 'How much type of truck your company?',
+        content: '5.We are offering the 5 types of delivery trucks. You can choose the truck which suits. How much type of truck your company'
+    },
+    {
+        title: 'How much type of truck your company?',
+        content: '6.We are offering the 5 types of delivery trucks. You can choose the truck which suits. How much type of truck your company'
     }
 ];
 
-const Accordion = () => {
+const AccordionSection = () => {
     return(
+        <div className="container">
+        <h1>
+          У вас есть вопрос?<span>?</span>
+        </h1>
         <div className="accordion">
             {items?.map((item , index) => (
                 <AccordionItem key={index} title={item.title} content={item.content} />
             ))}
         </div>
+      </div>
     )
 }
 
-export default Accordion
+export default AccordionSection;

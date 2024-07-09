@@ -10,8 +10,12 @@
   },
   "dependencies": {
     "@nextui-org/react": "^2.4.2",
+    "@nextui-org/slider": "^2.2.12",
+    "@nextui-org/system": "^2.2.2",
+    "@nextui-org/theme": "^2.2.6",
     "axios": "^1.7.2",
     "cookies-next": "^4.2.1",
+    "framer-motion": "^11.2.13",
     "js-cookie": "^3.0.5",
     "next": "14.2.4",
     "react": "^18",
@@ -19,7 +23,8 @@
     "react-router-dom": "^6.24.1",
     "sass": "^1.77.6",
     "styled-components": "^6.1.11",
-    "swiper": "^11.1.4"
+    "swiper": "^11.1.4",
+    "tailwindcss": "^3.4.4"
   },
   "devDependencies": {
     "eslint": "^8",

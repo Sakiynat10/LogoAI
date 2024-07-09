@@ -28,7 +28,7 @@ const Slider = () => {
   return (
     <div className='range-slider'>
       <input onChange={getRangeValue} value1={value1} onMouseMove={getRangeValue} className={(value1 < 5 ? "range-5 range" : (value1 < 10 ? "range-10 range" : (value1 < 15 ? "range-15 range" : "range-20 range")))} type="range" disabled defaultValue={value1} min={0} max={20} />
-      <div class="range-labels">
+      <div className="range-labels">
             <p>5</p>
             <p>10</p>
             <p>15</p>

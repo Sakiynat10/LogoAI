@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 import "./style.scss"
 
@@ -6,16 +8,16 @@ const Header = () => {
     <header>
       <nav className="container">
         <div className="nav-left">
-          <a href="/home">
+          <a href="/">
             <img src="/logo-icon.svg" alt="logo" />
             <p>LOGO<span>AI</span></p>
           </a>
           <ul>
             <li>
-              <a href="#">Грузооотправителям</a>
+              <a href="/about">Грузооотправителям</a>
             </li>
             <li>
-              <a href="#">Перевозчикам</a>
+              <a href="/vacancy">Перевозчикам</a>
             </li>
             <li>
               <a href="#">Диспетчерам</a>

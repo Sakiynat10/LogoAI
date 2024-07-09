@@ -2,11 +2,14 @@ import { Fragment } from "react";
 import "./style.scss";
 import Slider from "./../../components/truck-slider/index";
 import DeliverCards from "./../../components/deliver/index";
-import Accordion from "@/components/accordion";
 import ServiceCards from "./../../components/service-cards/index";
+import ContactSection from "./../../components/contact/index";
+import HeroSection from "./../../components/hero-section/index";
+import AccordionSection from "@/components/accordion";
+import { data } from "@/data";
 
 export const metadata = {
-  title: "LOGOAI ,LogoAi , LogoAI ,Транспортная компания нового поколения",
+  title: "LogoAI ,Транспортная компания нового поколения",
   description:
     "Мгновенный расчет цены на грузоперевозку , Hyundai Mighty ,How much type of truck your company,We are offering the 5 types of delivery trucks. You can choose the truck which suits. How much type of truck your company , (555)555-1234 ,Сервис автоматически расчитает стоимость доставки за минуту и предложит",
 };
@@ -15,35 +18,7 @@ export default function Home() {
   return (
     <Fragment>
       <section id="hero">
-        <div className="hero-content container-1320">
-          <div className="hero-infos">
-            <h1>Транспортная компания нового поколения</h1>
-            <p>Мгновенный расчет цены на грузоперевозку</p>
-            <form>
-              <input
-                className="input"
-                type="text"
-                placeholder="Введите пункт отправления"
-                required
-              />
-              <input
-                className="input"
-                type="text"
-                placeholder="Введите пункт назначения"
-                required
-              />
-              <img className="plug-input" src="/plugin.svg" alt="plugin" />
-              <div className="contact-group">
-                <button type="submit">Рассчитать</button>
-                <div className="contact-number">
-                  <p>или звоните:</p>
-                  <p>+998 90 000-00-00</p>
-                </div>
-              </div>
-            </form>
-          </div>
-          <img className="hero-img" src="/hero-truck.png" alt="hero truck" />
-        </div>
+        <HeroSection data={data} />
       </section>
       <section id="service">
         <div className="container">
@@ -96,36 +71,10 @@ export default function Home() {
         </div>
       </section>
       <section id="accordion">
-        <div className="container">
-          <h1>
-            У вас есть вопрос?<span>?</span>
-          </h1>
-          <Accordion />
-        </div>
+        <AccordionSection/>
       </section>
       <section id="contact">
-        <div className="contact-content container">
-          <div className="contact-infos">
-            <h1>Свяжитесь с нами</h1>
-            <p>
-              We are offering the 5 types of delivery trucks. You can choose the
-              truck which suits. How much type of truck your company
-            </p>
-            <form action="">
-              <input type="text" required placeholder="Ваша Имя" />
-              <div className="input-group">
-                <select name="" id="">
-                  <option value="1">+998</option>
-                  <option value="2">+718</option>
-                  <option value="3">+123</option>
-                </select>
-                <input type="tel" required placeholder="(99) 999 99 99" />
-              </div>
-              <button type="submit">Оставить зайавку</button>
-            </form>
-          </div>
-          <img className="contact-card" src="/contact-img.png" />
-        </div>
+        <ContactSection />
       </section>
       <section id="map">
         <div className="map-content container">
@@ -137,9 +86,9 @@ export default function Home() {
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23978.982155121208!2d69.24848709482929!3d41.30075356785089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ad31dd71f6f%3A0xe85aa2db6d49bad3!2sCity%20Department%20of%20Internal%20Affairs!5e0!3m2!1sen!2s!4v1720392290615!5m2!1sen!2s"
             width="600"
             height="450"
-            allowfullscreen=""
+            allowFullScreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
           <div className="media-group">
             <a href="#link">
