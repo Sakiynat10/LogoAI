@@ -10,7 +10,7 @@ const AdvantageSection = (
   <div className="container">
     <h1>Наши преимущества</h1>
     <div className="advantage-cards">
-    {advantages.map((el,  i) => <AdvantageCard key={i} {...el} />)}
+    {advantages.map((el, i) => <AdvantageCard key={i} {...el} />)}
     </div>
   </div>
   )
