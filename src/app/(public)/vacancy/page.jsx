@@ -6,6 +6,7 @@ import AdvantageSection from "@/components/advantage-section";
 import "./style.scss"
 import AccordionSection from "@/components/accordion";
 import ContactSection from "@/components/contact";
+import Counter from "@/components/counter";
 
 const vacancyAdvantages = [
   {
@@ -66,9 +67,9 @@ const checkBoxData = [
 ];
 
 const userInfo = {
-  day:"15+",
+  day:15,
   employee:"60",
-  totalOrder:"950+",
+  totalOrder:950,
   userImg:"/user-img.png",
 }
 
@@ -100,20 +101,7 @@ const VacancyPage = () => {
             </div>
           </div>
           <div className="work-content_right">
-            <div className="right-top">
-              <div className="top-card">
-                <h1>{userInfo?.day}</h1>
-                <p>заказов в день</p>
-              </div>
-              <div className="top-card">
-                <h1>{userInfo?.employee}</h1>
-                <p>Сотрудников</p>
-              </div>
-              <div className="top-card">
-                <h1>{userInfo?.totalOrder}</h1>
-                <p>заказов в 2022 году</p>
-              </div>
-            </div>
+            <Counter {...userInfo} />
             <img src={userInfo?.userImg} alt="user-img" />
           </div>
         </div>

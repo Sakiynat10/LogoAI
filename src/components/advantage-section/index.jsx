@@ -1,4 +1,3 @@
-import { advantages } from '@/data'
 import React from 'react'
 import AdvantageCard from '../advantage-card'
 import "./style.scss"

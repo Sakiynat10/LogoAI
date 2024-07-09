@@ -25,11 +25,13 @@ $secondary-color:#000;
         display: grid;
         grid-template-columns: auto auto;
         gap: 40px;
-        align-items: flex-start;
+        align-items: start;
         justify-content: space-between;
+       .accordion-items-left , .accordion-items-right{
         .accordion-item{
             max-width: 500px;
             width: 100%;
+            margin-bottom: 30px;
             .accordion-content{
                 padding-top: 10px;
                 color: $secondary-color;
@@ -41,6 +43,7 @@ $secondary-color:#000;
                 opacity: 0.7;
             }
         }
+    }
         .accordion-title{
             display: flex;
             align-items: center;
