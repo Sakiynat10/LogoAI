@@ -18,7 +18,7 @@
                 border-radius:16px;
                 object-fit: cover;
             }
-            h3{
+            .slider-title{
                 position:absolute;
                 font-family:Inter;
                 bottom:33px;
@@ -30,7 +30,7 @@
                 z-index: 4;
                 transition: 0.5s;
             }
-            p{
+            .slider-subtitle{
                 position:absolute;
                 bottom:14px;
                 left:-200px;

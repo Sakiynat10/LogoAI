@@ -36,74 +36,74 @@ const EmployeeSection = () => {
       >
             <SwiperSlide>
                 <img src="/employee-1.png"/>
-                <h3>Aziza Tolajanova</h3>
-                <p>+23 years experience</p>
+                <h3 className="slider-title" >Aziza Tolajanova</h3>
+                <p className='slider-subtitle'>+23 years experience</p>
                 <div className="overlay"></div>
             </SwiperSlide>
             <SwiperSlide>
                 <img src="/employee-2.png"/>
-                <h3>Nargiza Yusupova</h3>
-                <p>+12 years experience</p>
+                <h3 className="slider-title" >Nargiza Yusupova</h3>
+                <p className='slider-subtitle'>+12 years experience</p>
                 <div className="overlay"></div>
             </SwiperSlide>
             <SwiperSlide>
                 <img src="/employee-3.png"/>
-                <h3>Jack Klimma</h3>
-                <p>+12 years experience</p>
+                <h3 className="slider-title" >Jack Klimma</h3>
+                <p className='slider-subtitle'>+12 years experience</p>
                 <div className="overlay"></div>
             </SwiperSlide>
             <SwiperSlide>
                 <img src="/employee-4.png"/>
-                <h3>Ivan Klatiev</h3>
-                <p>+20 years experience</p>
+                <h3 className="slider-title" >Ivan Klatiev</h3>
+                <p className='slider-subtitle'>+20 years experience</p>
                 <div className="overlay"></div>
             </SwiperSlide>
             <SwiperSlide>
                 <img src="/employee-5.png"/>
-                <h3>Shohida Mansurova</h3>
-                <p>+3 years experience</p>
+                <h3 className="slider-title" >Shohida Mansurova</h3>
+                <p className='slider-subtitle'>+3 years experience</p>
                 <div className="overlay"></div>
             </SwiperSlide>
             <SwiperSlide>
                 <img src="/employee-1.png"/>
-                <h3>Aziza Tolajanova</h3>
-                <p>+23 years experience</p>
+                <h3 className="slider-title" >Aziza Tolajanova</h3>
+                <p className='slider-subtitle'>+23 years experience</p>
                 <div className="overlay"></div>
             </SwiperSlide>
             <SwiperSlide>
                 <img src="/employee-2.png"/>
-                <h3>Nargiza Yusupova</h3>
-                <p>+12 years experience</p>
+                <h3 className="slider-title" >Nargiza Yusupova</h3>
+                <p className='slider-subtitle'>+12 years experience</p>
                 <div className="overlay"></div>
             </SwiperSlide>
             <SwiperSlide>
                 <img src="/employee-3.png"/>
-                <h3>Jack Klimma</h3>
-                <p>+12 years experience</p>
+                <h3 className="slider-title" >Jack Klimma</h3>
+                <p className='slider-subtitle'>+12 years experience</p>
                 <div className="overlay"></div>
             </SwiperSlide>
             <SwiperSlide>
                 <img src="/employee-4.png"/>
-                <h3>Ivan Klatiev</h3>
-                <p>+20 years experience</p>
+                <h3 className="slider-title" >Ivan Klatiev</h3>
+                <p className='slider-subtitle'>+20 years experience</p>
                 <div className="overlay"></div>
             </SwiperSlide>
             <SwiperSlide>
                 <img src="/employee-5.png"/>
-                <h3>Shohida Mansurova</h3>
-                <p>+3 years experience</p>
+                <h3 className="slider-title" >Shohida Mansurova</h3>
+                <p className='slider-subtitle'>+3 years experience</p>
                 <div className="overlay"></div>
             </SwiperSlide>
             <SwiperSlide>
                 <img src="/employee-1.png"/>
-                <h3>Aziza Tolajanova</h3>
-                <p>+23 years experience</p>
+                <h3 className="slider-title" >Aziza Tolajanova</h3>
+                <p className='slider-subtitle'>+23 years experience</p>
                 <div className="overlay"></div>
             </SwiperSlide>
             <SwiperSlide>
                 <img src="/employee-2.png"/>
-                <h3>Nargiza Yusupova</h3>
-                <p>+12 years experience</p>
+                <h3 className="slider-title" >Nargiza Yusupova</h3>
+                <p className='slider-subtitle'>+12 years experience</p>
                 <div className="overlay"></div>
             </SwiperSlide>
       </Swiper>
