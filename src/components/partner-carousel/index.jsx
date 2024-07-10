@@ -1,4 +1,5 @@
 "use client"
+import "./style.scss"
 
 import React from 'react';
 // Import Swiper React components

@@ -34,43 +34,43 @@ const DisVacancySection = () => {
           modules={[Autoplay]}
           className="mySwiper"
         >
-          <SwiperSlide className="swiper-vacan-cards">
+          <SwiperSlide>
             <span className="vacancy-slide-title">Диспетчер</span>
             <span className="vacancy-slide-description">Нам нужен опытный работник болле чем 3 летним стажем </span>
           </SwiperSlide>
-          <SwiperSlide className="swiper-vacan-cards">
+          <SwiperSlide>
             <span className="vacancy-slide-title">Диспетчер</span>
             <span className="vacancy-slide-description">Нам нужен опытный работник болле чем 3 летним стажем </span>
           </SwiperSlide>
-          <SwiperSlide className="swiper-vacan-cards">
+          <SwiperSlide>
             <span className="vacancy-slide-title">Диспетчер</span>
             <span className="vacancy-slide-description">Нам нужен опытный работник болле чем 3 летним стажем </span>
           </SwiperSlide>
-          <SwiperSlide className="swiper-vacan-cards">
+          <SwiperSlide>
             <span className="vacancy-slide-title">Диспетчер</span>
             <span className="vacancy-slide-description">Нам нужен опытный работник болле чем 3 летним стажем </span>
           </SwiperSlide>
-          <SwiperSlide className="swiper-vacan-cards">
+          <SwiperSlide>
             <span className="vacancy-slide-title">Диспетчер</span>
             <span className="vacancy-slide-description">Нам нужен опытный работник болле чем 3 летним стажем </span>
           </SwiperSlide>
-          <SwiperSlide className="swiper-vacan-cards">
+          <SwiperSlide>
             <span className="vacancy-slide-title">Диспетчер</span>
             <span className="vacancy-slide-description">Нам нужен опытный работник болле чем 3 летним стажем </span>
           </SwiperSlide>
-          <SwiperSlide className="swiper-vacan-cards">
+          <SwiperSlide>
             <span className="vacancy-slide-title">Диспетчер</span>
             <span className="vacancy-slide-description">Нам нужен опытный работник болле чем 3 летним стажем </span>
           </SwiperSlide>
-          <SwiperSlide className="swiper-vacan-cards">
+          <SwiperSlide>
             <span className="vacancy-slide-title">Диспетчер</span>
             <span className="vacancy-slide-description">Нам нужен опытный работник болле чем 3 летним стажем </span>
           </SwiperSlide>
-          <SwiperSlide className="swiper-vacan-cards">
+          <SwiperSlide>
             <span className="vacancy-slide-title">Диспетчер</span>
             <span className="vacancy-slide-description">Нам нужен опытный работник болле чем 3 летним стажем </span>
           </SwiperSlide>
-          <SwiperSlide className="swiper-vacan-cards">
+          <SwiperSlide>
             <span className="vacancy-slide-title">Диспетчер</span>
             <span className="vacancy-slide-description">Нам нужен опытный работник болле чем 3 летним стажем </span>
           </SwiperSlide>
