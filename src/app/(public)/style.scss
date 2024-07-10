@@ -212,7 +212,7 @@ $secondary-color:#000;
             border-radius: 10px;
             border: none;
             outline: none;
-            filter: invert(100%);
+            filter: grayscale(100%);
         }
         .contact-num{
             position: absolute;

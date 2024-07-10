@@ -31,8 +31,17 @@ const order = [
     pl2: "Номер",
     src: "/hero-2.png",
   };
+  
 
   const vacancyData = {
+    h1: "Вакансия для диспечеров",
+    p: "Зарабатывайте от 80000 ₴ в месяц. Стабильная работа с оплатой за километраж",
+    pl1: "Имя",
+    pl2: "Номер",
+    src: "",
+  };
+
+  const clientsData = {
     h1: "Вакансия для диспечеров",
     p: "Зарабатывайте от 80000 ₴ в месяц. Стабильная работа с оплатой за километраж",
     pl1: "Имя",
@@ -81,4 +90,4 @@ const order = [
     
   ]
 
-export {data , aboutData , order ,  partnerData , vacancyData}
+export {data , aboutData , order ,  partnerData , vacancyData , clientsData}

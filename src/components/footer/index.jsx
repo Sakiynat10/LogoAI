@@ -14,7 +14,7 @@ const Footer = () => {
           </a>
           <ul>
             <li>
-              <a href="#">Грузооотправителям</a>
+              <a href="/about">Грузооотправителям</a>
             </li>
             <li>
               <a href="#">Доставка</a>
@@ -25,18 +25,18 @@ const Footer = () => {
           </ul>
           <ul>
             <li>
-              <a href="#">Перевозчикам</a>
+              <a href="/vacancy">Перевозчикам</a>
             </li>
             <li>
-              <a href="#">Вакансии</a>
+              <a href="/clients/#vacancy">Вакансии</a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href="#">Диспетчерам</a>
+              <a href="/clients">Диспетчерам</a>
             </li>
             <li>
-              <a href="#">Вакансии</a>
+              <a href="/clients/#vacancy">Вакансии</a>
             </li>
           </ul>
           <ul>
@@ -44,12 +44,12 @@ const Footer = () => {
               <a href="#">О компании</a>
             </li>
             <li>
-              <a href="#">Вакансии</a>
+              <a href="/clients/#vacancy">Вакансии</a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href="#">Контакты</a>
+              <a href="/#contact">Контакты</a>
             </li>
             <li>
               <a href="#">(555) 555-1234</a>

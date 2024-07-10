@@ -20,7 +20,7 @@ const Header = () => {
               <a href="/vacancy">Перевозчикам</a>
             </li>
             <li>
-              <a href="#">Диспетчерам</a>
+              <a href="/clients">Диспетчерам</a>
             </li>
           </ul>
         </div>

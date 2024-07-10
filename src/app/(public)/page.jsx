@@ -14,6 +14,7 @@ export const metadata = {
     "Мгновенный расчет цены на грузоперевозку , Hyundai Mighty ,How much type of truck your company,We are offering the 5 types of delivery trucks. You can choose the truck which suits. How much type of truck your company , (555)555-1234 ,Сервис автоматически расчитает стоимость доставки за минуту и предложит",
 };
 
+
 export default function Home() {
   return (
     <Fragment>
@@ -71,7 +72,7 @@ export default function Home() {
         </div>
       </section>
       <section id="accordion">
-        <AccordionSection/>
+        <AccordionSection />
       </section>
       <section id="contact">
         <ContactSection />
@@ -82,14 +83,7 @@ export default function Home() {
             <span>Телефон:</span>
             <h3>(555)555-1234</h3>
           </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23978.982155121208!2d69.24848709482929!3d41.30075356785089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ad31dd71f6f%3A0xe85aa2db6d49bad3!2sCity%20Department%20of%20Internal%20Affairs!5e0!3m2!1sen!2s!4v1720392290615!5m2!1sen!2s"
-            width="600"
-            height="450"
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3863.4381059848765!2d69.2464931176056!3d41.300955585834956!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b52c531597d%3A0xf8f015bc603ebb7f!2sBabura%20Most!5e0!3m2!1sen!2sus!4v1720589647656!5m2!1sen!2sus" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           <div className="media-group">
             <a href="#link">
               <img src="/media-1.svg" alt="media" />

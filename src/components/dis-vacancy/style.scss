@@ -1,0 +1,37 @@
+#vacancy{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    .swiper-slide{
+        width: 380px !important;
+        position: relative;
+        border-radius:16px;
+        height: 200px;
+        background-color:#F5F5F5;
+        margin-left: 6px;
+        cursor:pointer;
+        transition:0.5s;
+        overflow: hidden;
+        .vacancy-slide-title{
+            position:absolute;
+            top: 16px;
+            left: 16px;
+            background-color: #fff;
+            color:#FF413B;
+            padding: 10px 20px;
+            border-radius: 50px;
+            line-height: 100%; /* 14px */
+        }
+        .vacancy-slide-description{
+            position:absolute;
+            bottom: 24px;
+            left: 16px;
+            max-width: 302px;
+            width:100%;
+            color: #000;
+            font-family: Inter;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 140%; /* 25.2px */
+        }
+    }
+}

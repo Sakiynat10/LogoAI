@@ -3,7 +3,7 @@ import HeroSection from "@/components/hero-section";
 import { vacancyData } from "@/data";
 import AdvantageSection from "@/components/advantage-section";
 
-import "./style.scss"
+import "./style.scss";
 import AccordionSection from "@/components/accordion";
 import ContactSection from "@/components/contact";
 import Counter from "@/components/counter";
@@ -67,11 +67,11 @@ const checkBoxData = [
 ];
 
 const userInfo = {
-  day:15,
-  employee:"60",
-  totalOrder:950,
-  userImg:"/user-img.png",
-}
+  day: 15,
+  employee: 60,
+  totalOrder: 950,
+  userImg: "/user-img.png",
+};
 
 const VacancyPage = () => {
   return (
@@ -91,26 +91,45 @@ const VacancyPage = () => {
               нашем офисе вы можете развить ваши способности
             </p>
             <div className="content-left">
-                {checkBoxData?.map((el, i) => (
-                  <div key={i}>
-                    <img src="/checked.svg" alt="check" />
-                    <span>{el?.info}</span>
-                  </div>
-                ))}
-                <button type="submit">Узнать больше</button>
+              {checkBoxData?.map((el, i) => (
+                <div key={i}>
+                  <img src="/checked.svg" alt="check" />
+                  <span>{el?.info}</span>
+                </div>
+              ))}
+              <button type="submit">Узнать больше</button>
             </div>
           </div>
           <div className="work-content_right">
-            <Counter {...userInfo} />
+            <div className="right-top">
+              <div className="top-card">
+                <div className="counter-number">
+                  <Counter count={userInfo.day} />
+                  <span>+</span>
+                </div>
+                <p>заказов в день</p>
+              </div>
+              <div className="top-card">
+                <Counter count={userInfo.employee} />
+                <p>Сотрудников</p>
+              </div>
+              <div className="top-card">
+                <div className="counter-number">
+                  <Counter count={userInfo.totalOrder} />
+                  <span>+</span>
+                </div>
+                <p>заказов в 2022 году</p>
+              </div>
+            </div>
             <img src={userInfo?.userImg} alt="user-img" />
           </div>
         </div>
       </section>
       <section id="accordion">
-        <AccordionSection/>
+        <AccordionSection />
       </section>
       <section id="contact">
-        <ContactSection/>
+        <ContactSection />
       </section>
     </Fragment>
   );

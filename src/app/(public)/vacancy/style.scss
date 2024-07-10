@@ -70,6 +70,10 @@ $secondary-color: #000;
         justify-content: space-between;
         margin-bottom: 42px;
         .top-card{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
             h1{
                 color: $secondary-color;
                 font-family: Inter;
@@ -86,6 +90,16 @@ $secondary-color: #000;
                 font-style: normal;
                 font-weight: 500;
                 line-height: 140%;
+            }
+            .counter-number{
+              display: flex;
+              align-items: center;
+              gap:1px;
+              span{
+                display:inline-block;
+                height: 100%;
+                font-size: 30px;
+              }
             }
         }
       }
