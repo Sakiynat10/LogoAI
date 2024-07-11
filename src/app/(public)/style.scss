@@ -2,8 +2,6 @@ $primary-color: #FF413B;
 $secondary-color:#000;
 
 #service{
-    padding-top: 120px;
-    padding-bottom: 60px;
     .service-content{
         display: flex;
         align-items: center;
@@ -12,7 +10,7 @@ $secondary-color:#000;
         .service-card{
             max-width: 400px;
             width: 100%;
-            height: 320px;
+            height: 360px;
             padding-top: 40px;
             border-radius: 40px;
             border: 2px solid rgba(217, 217, 217, 1);
@@ -20,10 +18,28 @@ $secondary-color:#000;
             display: flex;
             flex-direction: column;
             position: relative;
+            &:nth-child(1){
+                img{
+                    max-width: 278px;
+                    height: 278px;
+                    object-fit: contain;
+                    width: 100%;
+                    right: 0px;
+                    bottom:-41px;
+                }
+            }
             &:nth-child(2){
                 img{
-                    max-width: 190px;
+                    max-width: 239px;
                     width: 100%;
+                }
+            }
+            &:nth-child(3){
+                img{
+                    max-width: 321px;
+                    height: 182px;
+                    width: 100%;
+                    right: -20px;
                 }
             }
             h2,  p{
@@ -33,21 +49,26 @@ $secondary-color:#000;
             }
             h2{
                 font-size: 28px;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
+                max-width: 310px;
             }
             p{
                 font-family: Poppins, sans-serif;
-                font-weight: 500;
+                max-width: 289px;
+                width:100%;
+                font-weight: 400;
+                font-size: 16px;
                 max-width: 380px;
                 width: 100%;
                 line-height: 22px;
                 text-align: left;    
-                z-index: 2;            
+                z-index: 2;      
+                color: #666666;      
             }
             img{
-                max-width: 220px;
-                width: 100%;
                 position: absolute;
+                object-fit: contain;
+                object-position: center;
                 bottom: 0;
                 right: 0;
                 border-bottom-right-radius: 40px;
@@ -84,7 +105,7 @@ $secondary-color:#000;
                 width: 40px;
                 height: 16px;
                 left: 196px;
-                top: -18px;
+                top: -17px;
                 z-index: 10;
                 background-color: #fff;
                 border-left:2px solid  rgba(217, 217, 217, 1) ;
@@ -93,6 +114,12 @@ $secondary-color:#000;
                 box-shadow: -4px 8px 0 #fff;
             }
         }
+    }
+    .service-outer{
+        padding-top: 120px;
+        padding-bottom: 60px;
+        background-color: #fff;
+        border-radius: 12px;
     }
 }
 
@@ -190,8 +217,14 @@ $secondary-color:#000;
 }
 
 #deliver{
-    padding-top: 90px;
-    padding-bottom: 90px;
+    .deliver-outer{
+        padding-top: 90px;
+        padding-bottom: 90px;
+        border-radius:12px;
+        border-bottom-right-radius:0;
+        border-bottom-left-radius:0;
+        background-color:#fff;
+    }
     h1{
         color: $secondary-color;
         font-family: Inter;
@@ -203,16 +236,33 @@ $secondary-color:#000;
 }
 
 #map{
-    padding-bottom: 60px;
+    .map-outer{
+        padding-bottom: 60px;
+        background-color:#fff;
+        border-bottom-left-radius:12px;
+        border-bottom-right-radius:12px;
+    }
     .map-content{
         position: relative;
-        iframe{
+        .ymaps-2-1-79-events-pane{
+            border-radius: 10px !important;
+            outline:none;
+        }
+        .ymaps-2-1-79-inner-panes{
+            border-radius: 10px !important;
+            outline:none;
+        }
+        .iframe{
             width: 100%;
             height: 450px;
-            border-radius: 10px;
+            border-radius: 10px !important;
             border: none;
             outline: none;
             filter: grayscale(100%);
+        }
+        .map-img{
+            z-index:20;
+            filter: grayscale(0%) !important;
         }
         .contact-num{
             position: absolute;
@@ -297,11 +347,11 @@ $secondary-color:#000;
                 content: '';
                 width: 0px;
                 height: 0px;
-                right:371px;
-                bottom: -26px;
+                right:368px;
+                bottom: -35px;
                 position: absolute;
                 background: transparent;
-                border: 29px solid transparent;
+                border: 32px solid transparent;
                 transform: translate(-50%, -50%);
                 border-bottom-color: #fff;
                 border-right-color: #fff;

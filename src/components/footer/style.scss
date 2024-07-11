@@ -1,6 +1,12 @@
 footer{
-    padding-top: 60px;
-    padding-bottom: 30px;
+    margin-top: 23px;
+    margin-bottom:23px;
+    .footer-outer{
+        padding-top: 60px;
+        padding-bottom: 20px;
+        background-color:#fff;
+        border-radius:12px;
+    }
     .footer-top-content{
         display: flex;
         justify-content: space-between;
@@ -70,6 +76,19 @@ footer{
         ul{
             display: flex;
             gap: 30px;
+            .footer-bottom-title{
+                color: #121212;
+                font-family: Inter;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 100%; /* 11px */
+            }
+            .bottom-right-title{
+                font-size: 14px;
+                span{
+                    font-weight: 600;
+                }
+            }
         }
     }
 }

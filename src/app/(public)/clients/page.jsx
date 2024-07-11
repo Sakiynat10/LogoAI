@@ -8,6 +8,7 @@ import EmployeeSection from "@/components/employee-section";
 import DisVacancySection from "@/components/dis-vacancy";
 import AccordionSection from "@/components/accordion";
 import ContactSection from "@/components/contact";
+import Counter from "@/components/counter";
 
 const clientsAdvantages = [
   {
@@ -59,56 +60,84 @@ const ClientPage = () => {
         <HeroSection data={clientsData} />
       </section>
       <section id="advantage">
-        <AdvantageSection advantages={clientsAdvantages} />
+        <div className="container-outer advantage-outer">
+          <AdvantageSection advantages={clientsAdvantages} />
+        </div>
       </section>
       <section id="analysis">
-        <div className="container">
-          <div className="analysis-content">
-            <div className="analysis-left">
-              <h1>Analytics that feels like it’s from the future</h1>
-              <p>
-                Powerful, self-serve product and growth analytics to help you
-                convert, engage, and retain more users. Trusted by over 4,000
-                startups.
-              </p>
-              <div className="left-cards">
-                <div className="card">
-                  <h1>4,000+</h1>
-                  <h4>Global customers</h4>
-                  <p>We’ve helped over 4,000 amazing global companies.</p>
-                </div>
-                <div className="card">
-                  <h1>4,000+</h1>
-                  <h4>Global customers</h4>
-                  <p>We’ve helped over 4,000 amazing global companies.</p>
-                </div>
-                <div className="card">
-                  <h1>4,000+</h1>
-                  <h4>Global customers</h4>
-                  <p>We’ve helped over 4,000 amazing global companies.</p>
-                </div>
-                <div className="card">
-                  <h1>4,000+</h1>
-                  <h4>Global customers</h4>
-                  <p>We’ve helped over 4,000 amazing global companies.</p>
+        <div className="container-outer analysis-outer">
+          <div className="container">
+            <div className="analysis-content">
+              <div className="analysis-left">
+                <h1>Analytics that feels like it’s from the future</h1>
+                <p>
+                  Powerful, self-serve product and growth analytics to help you
+                  convert, engage, and retain more users. Trusted by over 4,000
+                  startups.
+                </p>
+                <div className="left-cards">
+                  <div className="card">
+                    <div className="counter-number">
+                      <Counter count={4000} />
+                      <span>+</span>
+                    </div>
+                    <h4>Global customers</h4>
+                    <p>We’ve helped over 4,000 amazing global companies.</p>
+                  </div>
+                  <div className="card">
+                  <div className="counter-number">
+                      <Counter count={4000} />
+                      <span>+</span>
+                    </div>
+                    <h4>Global customers</h4>
+                    <p>We’ve helped over 4,000 amazing global companies.</p>
+                  </div>
+                  <div className="card">
+                  <div className="counter-number">
+                      <Counter count={4000} />
+                      <span>+</span>
+                    </div>
+                    <h4>Global customers</h4>
+                    <p>We’ve helped over 4,000 amazing global companies.</p>
+                  </div>
+                  <div className="card">
+                  <div className="counter-number">
+                      <Counter count={4000} />
+                      <span>+</span>
+                    </div>
+                    <h4>Global customers</h4>
+                    <p>We’ve helped over 4,000 amazing global companies.</p>
+                  </div>
                 </div>
               </div>
+              <img
+                className="analysis-right"
+                src="/hero-truck.png"
+                alt="truck"
+              />
             </div>
-            <img className="analysis-right" src="/hero-truck.png" alt="truck" />
           </div>
         </div>
       </section>
       <section id="employee">
-        <EmployeeSection />
+        <div className="container-outer employee-outer">
+          <EmployeeSection />
+        </div>
       </section>
       <section id="vacancy">
-        <DisVacancySection/>
+        <div className="container-outer vacancy-outer">
+          <DisVacancySection />
+        </div>
       </section>
       <section id="accordion">
-        <AccordionSection/>
+        <div className="container-outer accordion-outer">
+          <AccordionSection />
+        </div>
       </section>
       <section id="contact">
-        <ContactSection/>
+        <div className="container-outer contact-outer">
+          <ContactSection />
+        </div>
       </section>
     </Fragment>
   );

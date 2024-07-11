@@ -2,8 +2,14 @@ $primary-color:#FF413B;
 $secondary-color:#000;
 
 #order{
-    padding-top: 133px;
-    padding-bottom: 133px;
+
+    .order-outer{
+        padding-top: 133px;
+        padding-bottom: 133px;
+        border-top-right-radius:12px;
+        border-top-left-radius:12px;
+        background-color:#fff;
+    }
     .order-cards{
         display: grid;
         grid-template-columns: auto auto auto;
@@ -38,8 +44,11 @@ $secondary-color:#000;
 }
 
 #partner{
-    padding-top: 60px;
-    padding-bottom: 60px;
+    .partner-outer{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-color:#fff;
+    }
     h1{
         color: $secondary-color;
         font-size: 72px;
@@ -58,5 +67,15 @@ $secondary-color:#000;
         max-width: 720px;
         width: 100%;
         margin-bottom: 80px;
+    }
+}
+
+#contact{
+    .contact-outer{
+        padding-top: 90px;
+        padding-bottom: 90px;
+        background-color:#fff;  
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius:12px;
     }
 }

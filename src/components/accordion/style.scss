@@ -2,8 +2,11 @@ $primary-color: #FF413B;
 $secondary-color:#000;
 
 #accordion{
-    padding-top: 60px;
-    padding-bottom: 60px;
+    .accordion-outer{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-color:#fff;
+    }
     h1{
         color: $secondary-color;
         font-family: Inter;
@@ -41,6 +44,7 @@ $secondary-color:#000;
                 font-weight: 400;
                 line-height: 140%; /* 22.4px */
                 opacity: 0.7;
+                margin-left: 40px;
             }
         }
     }
@@ -57,6 +61,7 @@ $secondary-color:#000;
             h3{
                 width: 500px;
                 font-size: 24px;
+                font-weight: 400 !important;
             }
         }
         .minus{

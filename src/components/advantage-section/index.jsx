@@ -7,7 +7,7 @@ const AdvantageSection = (
 ) => {
   return (
   <div className="container">
-    <h1 className='adv-title'>Наши преимущества</h1>
+    <h1>Наши преимущества</h1>
     <div className="advantage-cards">
     {advantages.map((el, i) => <AdvantageCard key={i} {...el} />)}
     </div>

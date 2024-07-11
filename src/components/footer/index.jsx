@@ -4,6 +4,7 @@ import "./style.scss"
 const Footer = () => {
   return (
     <footer>
+      <div className="container-outer footer-outer">
       <div className="container">
         <div className="footer-top-content">
           <a className="footer-logo" href="/home">
@@ -84,18 +85,19 @@ const Footer = () => {
         <div className="footer-bottom-content">
           <ul>
             <li>
-              <p>Privacy Policy</p>
+              <p className="footer-bottom-title">Privacy Policy</p>
             </li>
             <li>
-              <p>Privacy Policy</p>
+              <p className="footer-bottom-title">Privacy Policy</p>
             </li>
           </ul>
           <ul>
             <li>
-              <p>Design by: <span>Getter</span></p>
+              <p className="bottom-right-title">Design by: <span>Getter</span></p>
             </li>
           </ul>
         </div>
+      </div>
       </div>
     </footer>
   );

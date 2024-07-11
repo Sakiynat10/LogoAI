@@ -1,13 +1,11 @@
-.adv-title{
-    text-align: center !important;
-    font-size: 48px !important;
-    font-weight: 600 !important;
-    line-height: 48px !important;
-}
+
 
 #analysis{
-    padding-top: 90px;
-    padding-bottom: 60px;
+    .analysis-outer{
+        padding-top: 90px;
+        padding-bottom: 60px;
+        background-color: #fff;
+    }
     .analysis-content{
         display: flex;
         align-items: center;
@@ -31,6 +29,19 @@
             .left-cards{
                 display: grid;
                 grid-template-columns: auto auto;
+                .counter-number{
+                    display: flex;
+                    align-items: center;
+                    span{
+                        display: inline-block;
+                        width: 50px;
+                        font-size: 60px;
+                        height: 50px;
+                        font-weight: 600;
+                        color: #FF413B;
+                        margin-bottom: 50px;
+                    }
+                }
                 .card{
                     max-width: 300px;
                     width: 100%;
@@ -67,9 +78,21 @@
     }
 }
 
+#advantage{
+    .advantage-outer{
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+    }
+}
+
+#contact{
+    .contact-outer{
+        border-bottom-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+    }
+}
+
 #vacancy{
-    padding-top: 90px;
-    padding-bottom: 60px;
     h1{
         font-family: Inter;
         font-size: 32px;

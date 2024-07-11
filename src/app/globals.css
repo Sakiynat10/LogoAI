@@ -26,10 +26,20 @@
   padding: 0 20px;
 }
 
+.container-outer{
+  width:96vw;
+  margin-left:auto;
+  margin-right:auto;
+}
+
 ul{
   list-style: none;
 }
 
 a{
   text-decoration: none;
+}
+
+body{
+  background-color: #E7E7E7;
 }

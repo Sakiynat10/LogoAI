@@ -2,8 +2,11 @@ $primary-color: #FF413B;
 $secondary-color: #000;
 
 #work {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  .work-outer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #fff;
+  }
   .work-content {
     display: flex;
     justify-content: space-between;
@@ -58,8 +61,8 @@ $secondary-color: #000;
             opacity: 1;
             transition: 0.5s;
             &:hover{
-                background-color: rgba(255, 65, 59, 0.5);
-                border: 2px solid rgba(255, 65, 59, 0.0);
+                background-color: #fff;
+                border: $primary-color;
             }
         }
       }
@@ -104,5 +107,19 @@ $secondary-color: #000;
         }
       }
     }
+  }
+}
+
+#advantage{
+  .advantage-outer{
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+  }
+}
+
+#contact{
+  .contact-outer{
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
   }
 }

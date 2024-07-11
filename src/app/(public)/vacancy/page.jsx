@@ -80,9 +80,12 @@ const VacancyPage = () => {
         <HeroSection data={vacancyData} />
       </section>
       <section id="advantage">
+        <div className="container-outer advantage-outer">
         <AdvantageSection advantages={vacancyAdvantages} />
+        </div>
       </section>
       <section id="work">
+        <div className="container-outer work-outer">
         <div className="work-content container">
           <div className="work-content_left">
             <h1>Условия работы</h1>
@@ -124,12 +127,17 @@ const VacancyPage = () => {
             <img src={userInfo?.userImg} alt="user-img" />
           </div>
         </div>
+        </div>
       </section>
       <section id="accordion">
+        <div className="container-outer accordion-outer">
         <AccordionSection />
+        </div>
       </section>
       <section id="contact">
+        <div className="container-outer contact-outer">
         <ContactSection />
+        </div>
       </section>
     </Fragment>
   );

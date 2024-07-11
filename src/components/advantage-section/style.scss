@@ -1,8 +1,11 @@
 $secondary-color:#000;
 
 #advantage{
-    padding-top: 60px;
-    padding-bottom: 60px;
+    .advantage-outer{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-color:#fff;
+    }
     h1{
         font-family: Inter;
         font-size: 64px;

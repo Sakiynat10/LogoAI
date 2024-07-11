@@ -33,16 +33,21 @@ const AboutPage = () => {
         <HeroSection data={aboutData} />
       </section>
       <section id="order">
+        <div className="container-outer order-outer">
         <div className="order-cards container">
           {order?.map((el, index) => (
             <OrderCard {...el} key={index} />
           ))}
         </div>
+        </div>
       </section>
       <section id="advantage">
+        <div className="container-outer advantage-outer">
         <AdvantageSection advantages={advantages} />
+        </div>
       </section>
       <section id="partner">
+        <div className="container-outer partner-outer">
         <div className="container">
           <h1>Бонусы от партнеров</h1>
           <p>
@@ -51,12 +56,17 @@ const AboutPage = () => {
           </p>
         </div>
         <PartnerCarousel/>
+        </div>
       </section>
       <section id="accordion">
+        <div className="container-outer accordion-outer">
         <AccordionSection/>
+        </div>
       </section>
       <section id="contact">
+        <div className="container-outer contact-outer">
         <ContactSection/>
+        </div>
       </section>
     </Fragment>
   );

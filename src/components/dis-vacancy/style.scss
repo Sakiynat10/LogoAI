@@ -1,6 +1,9 @@
 #vacancy{
-    padding-top: 90px;
-    padding-bottom: 90px;
+    .vacancy-outer{
+        padding-top: 90px;
+        padding-bottom: 90px;
+        background-color: #fff;
+    }
     .swiper-slide{
         width: 380px !important;
         position: relative;
