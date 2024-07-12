@@ -13,21 +13,52 @@ const AccordionItem = () => {
 
   const toggleOpen1 = () => {
     setIsOpen1(!isOpen1);
+    setIsOpen2(false);
+    setIsOpen3(false);
+    setIsOpen4(false);
+    setIsOpen5(false);
+    setIsOpen6(false);
+
   };
   const toggleOpen2 = () => {
     setIsOpen2(!isOpen2);
+    setIsOpen1(false);
+    setIsOpen3(false);
+    setIsOpen4(false);
+    setIsOpen5(false);
+    setIsOpen6(false);
   };
   const toggleOpen3 = () => {
     setIsOpen3(!isOpen3);
+    setIsOpen2(false);
+    setIsOpen1(false);
+    setIsOpen4(false);
+    setIsOpen5(false);
+    setIsOpen6(false);
   };
   const toggleOpen4 = () => {
     setIsOpen4(!isOpen4);
+    setIsOpen2(false);
+    setIsOpen3(false);
+    setIsOpen1(false);
+    setIsOpen5(false);
+    setIsOpen6(false);
   };
   const toggleOpen5 = () => {
     setIsOpen5(!isOpen5);
+    setIsOpen2(false);
+    setIsOpen3(false);
+    setIsOpen4(false);
+    setIsOpen1(false);
+    setIsOpen6(false);
   };
   const toggleOpen6 = () => {
     setIsOpen6(!isOpen6);
+    setIsOpen2(false);
+    setIsOpen3(false);
+    setIsOpen4(false);
+    setIsOpen5(false);
+    setIsOpen1(false);
   };
 
   return (
@@ -40,12 +71,12 @@ const AccordionItem = () => {
             </span>
             <h3>'How much type of truck your company?'</h3>
           </div>
-          {isOpen1 && (
-            <div className="accordion-content">
+          
+            <div className={isOpen1 ? "accordion-content" : "hide-content"}>
               "1.We are offering the 5 types of delivery trucks. You can choose
               the truck which suits. How much type of truck your company"
             </div>
-          )}
+        
         </div>
         <div className="accordion-item">
           <div className="accordion-title" onClick={toggleOpen2}>
@@ -54,12 +85,10 @@ const AccordionItem = () => {
             </span>
             <h3>'How much type of truck your company?'</h3>
           </div>
-          {isOpen2 && (
-            <div className="accordion-content">
+          <div className={isOpen2 ? "accordion-content" : "hide-content"}>
               "1.We are offering the 5 types of delivery trucks. You can choose
               the truck which suits. How much type of truck your company"
             </div>
-          )}
         </div>
         <div className="accordion-item">
           <div className="accordion-title" onClick={toggleOpen3}>
@@ -68,12 +97,10 @@ const AccordionItem = () => {
             </span>
             <h3>'How much type of truck your company?'</h3>
           </div>
-          {isOpen3 && (
-            <div className="accordion-content">
+          <div className={isOpen3 ? "accordion-content" : "hide-content"}>
               "1.We are offering the 5 types of delivery trucks. You can choose
               the truck which suits. How much type of truck your company"
             </div>
-          )}
         </div>
       </div>
       <div className="accordion-items-right">
@@ -84,12 +111,10 @@ const AccordionItem = () => {
             </span>
             <h3>'How much type of truck your company?'</h3>
           </div>
-          {isOpen4 && (
-            <div className="accordion-content">
+          <div className={isOpen4 ? "accordion-content" : "hide-content"}>
               "1.We are offering the 5 types of delivery trucks. You can choose
               the truck which suits. How much type of truck your company"
             </div>
-          )}
         </div>
         <div className="accordion-item">
           <div className="accordion-title" onClick={toggleOpen5}>
@@ -98,12 +123,10 @@ const AccordionItem = () => {
             </span>
             <h3>'How much type of truck your company?'</h3>
           </div>
-          {isOpen5 && (
-            <div className="accordion-content">
+          <div className={isOpen5 ? "accordion-content" : "hide-content"}>
               "1.We are offering the 5 types of delivery trucks. You can choose
               the truck which suits. How much type of truck your company"
             </div>
-          )}
         </div>
         <div className="accordion-item">
           <div className="accordion-title" onClick={toggleOpen6}>
@@ -112,12 +135,10 @@ const AccordionItem = () => {
             </span>
             <h3>'How much type of truck your company?'</h3>
           </div>
-          {isOpen6 && (
-            <div className="accordion-content">
+          <div className={isOpen6 ? "accordion-content" : "hide-content"}>
               "1.We are offering the 5 types of delivery trucks. You can choose
               the truck which suits. How much type of truck your company"
             </div>
-          )}
         </div>
       </div>
     </Fragment>
