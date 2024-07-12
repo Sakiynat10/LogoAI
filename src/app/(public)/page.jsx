@@ -91,6 +91,10 @@ export default function Home() {
         <div className="container-outer map-outer">
         <div className="map-content container">
           <div className="contact-num">
+            <span className="border-1"></span>
+            <span className="border-2"></span>
+            <span className="border-3"></span>
+            <span className="border-4"></span>
             <span>Телефон:</span>
             <h3>(555)555-1234</h3>
           </div>

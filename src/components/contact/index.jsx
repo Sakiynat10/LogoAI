@@ -28,7 +28,7 @@ const ContactSection = () => {
                 <option value="3">+123</option>
               </select>
             </div>
-            <input className={inputValue ? "error input"  : "input"}  onChange={handleInput} pattern="\d+"  type="tel"  required placeholder="99 999 99 99" />
+            <input className={inputValue ? "error input"  : "input"}  onChange={handleInput} pattern="\d+"  type="number"  required placeholder="99 999 99 99" />
           </div>
           <button type="submit">Оставить зайавку</button>
         </form>

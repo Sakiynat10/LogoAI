@@ -237,6 +237,7 @@ $secondary-color:#000;
 
 #map{
     .map-outer{
+        padding-top: 60px;
         padding-bottom: 60px;
         background-color:#fff;
         border-bottom-left-radius:12px;
@@ -270,7 +271,7 @@ $secondary-color:#000;
             left: 20px;
             z-index: 3;
             background-color: #fff;
-            max-width: 400px;
+            max-width: 380px;
             width: 100%;
             padding-bottom: 20px;
             span{
@@ -288,18 +289,19 @@ $secondary-color:#000;
                 letter-spacing: 3px;
             }
             &::before{
-                content: '';
-                z-index: 3;
-                width: 0px;
-                height: 0px;
-                left:429px;
-                top: 37px;
+                content:'';
                 position: absolute;
-                background: transparent;
-                border: 30px solid transparent;
-                transform: translate(-50%, -50%);
-                border-top-color: #fff;
-                border-left-color: #fff;
+                display:inline-block;
+                width:90px;
+                height:57px;
+                background:#fff;
+                transform: skewX(-45deg);
+                left:340px;
+                top:10px;
+                z-index:22;
+                opacity: 1;
+                border-radius: 5px;
+                border-top-right-radius: 0px;
             }
             &::after{
                 content: '';
@@ -344,17 +346,31 @@ $secondary-color:#000;
                 }
             }
             &::before{
-                content: '';
-                width: 0px;
-                height: 0px;
-                right:368px;
-                bottom: -35px;
+                // content: '';
+                // width: 0px;
+                // height: 0px;
+                // right:368px;
+                // bottom: -35px;
+                // position: absolute;
+                // background: transparent;
+                // border: 32px solid transparent;
+                // transform: translate(-50%, -50%);
+                // border-bottom-color: #fff;
+                // border-right-color: #fff;
+                content:'';
                 position: absolute;
-                background: transparent;
-                border: 32px solid transparent;
-                transform: translate(-50%, -50%);
-                border-bottom-color: #fff;
-                border-right-color: #fff;
+                display:inline-block;
+                width:80px;
+                height:60px;
+                background:#fff;
+                transform: skewX(-45deg);
+                right:355px;
+                bottom: 0px;
+                z-index:22;
+                opacity: 1;
+                border-radius: 5px;
+                border-top-right-radius: 0px;
+                border-bottom-left-radius: 0px;
             }
             &::after{
                 content: '';

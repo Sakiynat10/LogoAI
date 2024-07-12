@@ -48,6 +48,10 @@ $secondary-color:#000;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 100%; /* 18px */
+                &::-webkit-inner-spin-button,
+                &::-webkit-outer-spin-button{
+                    -webkit-appearance:none;
+                }
             }
             .input-group{
                 display: flex;
