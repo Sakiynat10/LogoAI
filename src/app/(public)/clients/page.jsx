@@ -53,6 +53,28 @@ const clientsAdvantages = [
   },
 ];
 
+const checkBoxData = [
+  {
+    info: "Справедливая зарплата",
+  },
+  {
+    info: "Работать дома",
+  },
+  {
+    info: "Работа по договерености",
+  },
+  {
+    info: "Минимальные операционные издержки",
+  },
+];
+
+const userInfo = {
+  day: 15,
+  employee: 60,
+  totalOrder: 950,
+  userImg: "/user-img.png",
+};
+
 const ClientPage = () => {
   return (
     <Fragment>
@@ -64,59 +86,51 @@ const ClientPage = () => {
           <AdvantageSection advantages={clientsAdvantages} />
         </div>
       </section>
-      <section id="analysis">
-        <div className="container-outer analysis-outer">
-          <div className="container">
-            <div className="analysis-content">
-              <div className="analysis-left">
-                <h1>Analytics that feels like it’s from the future</h1>
-                <p>
-                  Powerful, self-serve product and growth analytics to help you
-                  convert, engage, and retain more users. Trusted by over 4,000
-                  startups.
-                </p>
-                <div className="left-cards">
-                  <div className="card">
-                    <div className="counter-number">
-                      <Counter count={4000} />
-                      <span>+</span>
-                    </div>
-                    <h4>Global customers</h4>
-                    <p>We’ve helped over 4,000 amazing global companies.</p>
-                  </div>
-                  <div className="card">
-                  <div className="counter-number">
-                      <Counter count={4000} />
-                      <span>+</span>
-                    </div>
-                    <h4>Global customers</h4>
-                    <p>We’ve helped over 4,000 amazing global companies.</p>
-                  </div>
-                  <div className="card">
-                  <div className="counter-number">
-                      <Counter count={4000} />
-                      <span>+</span>
-                    </div>
-                    <h4>Global customers</h4>
-                    <p>We’ve helped over 4,000 amazing global companies.</p>
-                  </div>
-                  <div className="card">
-                  <div className="counter-number">
-                      <Counter count={4000} />
-                      <span>+</span>
-                    </div>
-                    <h4>Global customers</h4>
-                    <p>We’ve helped over 4,000 amazing global companies.</p>
-                  </div>
+      <section id="work">
+        <div className="container-outer work-outer">
+        <div className="work-content container">
+          <div className="work-content_left">
+            <h1>Условия работы</h1>
+            <p>
+              Мы предостовляем нашим сотрудникам самый лучшые предложения в
+              нашем офисе вы можете развить ваши способности
+            </p>
+            <div className="content-left">
+              {checkBoxData?.map((el, i) => (
+                <div key={i}>
+                  <img src="/checked.svg" alt="check" />
+                  <span>{el?.info}</span>
                 </div>
-              </div>
-              <img
-                className="analysis-right"
-                src="/hero-truck.png"
-                alt="truck"
-              />
+              ))}
+              <button type="submit">Узнать больше</button>
             </div>
           </div>
+          <div className="work-content_right">
+            <div className="right-top">
+              <div className="top-card">
+                <div className="counter-number">
+                  <Counter count={userInfo.day} />
+                  <span>+</span>
+                </div>
+                <p>заказов в день</p>
+              </div>
+              <div className="top-card">
+              <div className="counter-number">
+                  <Counter count={userInfo.employee} />
+                </div>
+                <p>Сотрудников</p>
+              </div>
+              <div className="top-card">
+                <div className="counter-number">
+                  <Counter count={userInfo.totalOrder} />
+                  <span>+</span>
+                </div>
+                <p>заказов в 2022 году</p>
+              </div>
+            </div>
+            <img src={userInfo?.userImg} alt="user-img" />
+          </div>
+        </div>
         </div>
       </section>
       <section id="employee">

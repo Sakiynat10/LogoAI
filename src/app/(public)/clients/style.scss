@@ -1,4 +1,4 @@
-
+@import "/src/app/globals.css";
 
 #analysis{
     .analysis-outer{
@@ -101,3 +101,114 @@
         margin-bottom: 40px;
     }
 }
+
+#work {
+    .work-outer{
+      padding-top: 60px;
+      padding-bottom: 60px;
+      background-color: #fff;
+    }
+    .work-content {
+      display: flex;
+      justify-content: space-between;
+      .work-content_left {
+        max-width: 600px;
+        width: 100%;
+        h1 {
+          font-family: Inter;
+          font-size: 72px;
+          font-weight: 400;
+          line-height: 72px;
+          text-align: left;
+          margin-bottom: 30px;
+        }
+        p {
+          color: var(--secondary-color);
+          font-family: Inter;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 140%; /* 28px */
+          opacity: 0.5;
+          margin-bottom: 24px;
+        }
+        .content-left {
+          display: flex;
+          flex-direction: column;
+          align-items: self-start;
+          justify-content: center;
+          gap: 30px;
+          span {
+            color: var(--secondary-color);
+            font-family: Inter;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 100%; /* 18px */
+            margin-left: 5px;
+          }
+          img{
+              width: 16px;
+              height: 16px;
+          }
+          button{
+              background-color: var(--primary-color);
+              border: 2px solid var(--primary-color);
+              padding: 12px 18px;
+              color: #fff;
+              font-size: 18px;
+              border-radius: 50px;
+              margin-top: 10px;
+              cursor: pointer;
+              opacity: 1;
+              border:2px solid  var(--primary-color);
+              transition: 0.5s;
+              &:hover{
+                  background-color: #fff;
+                  border:2px solid  var(--primary-color);
+                  color:var(--primary-color);
+              }
+          }
+        }
+      }
+      .work-content_right {
+        .right-top{
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 42px;
+          .top-card{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+              h1{
+                  color: var(--secondar-color);
+                  font-family: Inter;
+                  font-size: 44px;
+                  font-weight: 600;
+                  line-height: 100%;
+                  margin-bottom: 8px;
+                  text-align: center;
+              }
+              p{
+                  color: var(--secondar-color);
+                  font-family: Inter;
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: 140%;
+              }
+              .counter-number{
+                display: flex;
+                align-items: center;
+                gap:1px;
+                span{
+                  display:inline-block;
+                  height: 100%;
+                  font-size: 30px;
+                }
+              }
+          }
+        }
+      }
+    }
+  }

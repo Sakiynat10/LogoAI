@@ -22,10 +22,11 @@ header{
         gap: 40px;
         a{
             display: flex;
-            gap: 8px;
+            align-items: center;
+            gap: 4px;
             img{
-                width: 30px;
-                height:30px;
+                width: 27px;
+                height:27px;
             }
             p{
                 font-family: Poppins;
@@ -54,6 +55,9 @@ header{
                     &:hover{
                         color: #FF413B;
                     }
+                }
+                .active{
+                    color: #ff413b;
                 }
             }
         }

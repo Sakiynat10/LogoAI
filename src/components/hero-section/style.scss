@@ -6,14 +6,12 @@ $primary-color: #ff413b;
   padding-top: 148px;
   background-color: #e7e7e7;
   .hero-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     .hero-infos {
       max-width: 350px;
       width: 100%;
-      padding-bottom: 60px;
       h1 {
         color: $secondary-color;
         font-family: Inter;
@@ -113,11 +111,12 @@ $primary-color: #ff413b;
       }
     }
     .hero-img {
-      max-width: 604px;
-      height: 75vh;
+      max-width: 600px;
       width: 100%;
+      align-self: self-end;
       object-fit: contain;
       object-position: center;
+      height: 75vh;
     }
   }
 }

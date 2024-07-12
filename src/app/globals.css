@@ -43,3 +43,8 @@ a{
 body{
   background-color: #E7E7E7;
 }
+
+:root{
+  --primary-color:#ff413b;
+  --secondary-color:#000;
+}

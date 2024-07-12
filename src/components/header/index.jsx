@@ -2,31 +2,32 @@
 
 import React from "react";
 import "./style.scss"
+import  NavLink  from "../navlink";
 
 const Header = () => {
   return (
     <header>
       <nav className="container">
         <div className="nav-left">
-          <a href="/">
+          <NavLink href="/">
             <img src="/logo-icon.svg" alt="logo" />
             <p>LOGO<span>AI</span></p>
-          </a>
+          </NavLink>
           <ul>
             <li>
-              <a href="/about">Грузооотправителям</a>
+              <NavLink href="/">Грузооотправителям</NavLink>
             </li>
             <li>
-              <a href="/vacancy">Перевозчикам</a>
+              <NavLink href="/about">Перевозчикам</NavLink>
             </li>
             <li>
-              <a href="/clients">Диспетчерам</a>
+              <NavLink href="/clients">Диспетчерам</NavLink>
             </li>
           </ul>
         </div>
-        <a href="#" className="nav-right">
+        <NavLink href="#" className="nav-right">
         Заказать
-        </a>
+        </NavLink>
       </nav>
     </header>
   );
