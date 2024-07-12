@@ -23,6 +23,10 @@ header{
         a{
             display: flex;
             gap: 8px;
+            img{
+                width: 30px;
+                height:30px;
+            }
             p{
                 font-family: Poppins;
                 font-size: 32px;
