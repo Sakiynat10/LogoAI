@@ -83,7 +83,7 @@ export default function Home() {
         </div>
       </section>
       <section id="contact">
-        <div className="container-outer contact-outer">
+        <div className="container-outer contact-home-outer">
         <ContactSection />
         </div>
       </section>
