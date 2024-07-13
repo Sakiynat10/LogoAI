@@ -27,7 +27,7 @@ const EmployeeSection = () => {
           delay: 2500,
           disableOnInteraction: false,
         }}
-        slidesPerView={6.24}
+        slidesPerView={6.2}
         pagination={{
           clickable: false,
         }}
