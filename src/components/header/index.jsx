@@ -10,8 +10,7 @@ const Header = () => {
       <nav className="container">
         <div className="nav-left">
           <NavLink href="/">
-            <img src="/logo-icon.svg" alt="logo" />
-            <p>LOGO<span>AI</span></p>
+            <p>Get<span>it</span></p>
           </NavLink>
           <ul>
             <li>

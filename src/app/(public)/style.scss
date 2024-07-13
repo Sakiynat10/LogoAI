@@ -119,7 +119,7 @@ $secondary-color:#000;
         padding-top: 120px;
         padding-bottom: 60px;
         background-color: #fff;
-        border-radius: 12px;
+        border-radius: 32px;
     }
 }
 
@@ -220,7 +220,7 @@ $secondary-color:#000;
     .deliver-outer{
         padding-top: 90px;
         padding-bottom: 90px;
-        border-radius:12px;
+        border-radius:32px;
         border-bottom-right-radius:0;
         border-bottom-left-radius:0;
         background-color:#fff;
@@ -240,8 +240,8 @@ $secondary-color:#000;
         padding-top: 60px;
         padding-bottom: 60px;
         background-color:#fff;
-        border-bottom-left-radius:12px;
-        border-bottom-right-radius:12px;
+        border-bottom-left-radius:32px;
+        border-bottom-right-radius:32px;
     }
     .map-content{
         position: relative;
@@ -259,11 +259,32 @@ $secondary-color:#000;
             border-radius: 10px !important;
             border: none;
             outline: none;
-            filter: grayscale(100%);
+            filter: grayscale(85%);
         }
         .map-img{
             z-index:20;
-            filter: grayscale(0%) !important;
+            width:1000px !important;
+        }
+
+        .ymaps-2-1-79-image  {
+            width: 70px;
+            height: 70px;
+            animation: pulse 2s infinite;
+            position: absolute !important;
+            z-index:3000000;
+            filter:grayscale(0%) !important;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
         }
         .contact-num{
             position: absolute;

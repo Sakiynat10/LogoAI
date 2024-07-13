@@ -109,13 +109,14 @@ export default function Home() {
                 options={{
                   iconLayout: "default#image",
                   iconImageHref: "/placemark.svg",
-                  iconImageSize: [152, 152],
+                  iconImageSize: [120, 120],
+                  iconColor:"red",
                 }}
                 geometry={[41.303532, 69.248622]}
                 iconImageOffset={[-0, -0]}
                 // Offset of the layer with content relative to the layer with the image.
                 iconContentOffset={[0, 0]}
-                className="map-img"
+                className="map-img animated-image"
               />
             </Map>
           </YMaps>

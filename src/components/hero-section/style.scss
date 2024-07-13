@@ -7,11 +7,12 @@ $primary-color: #ff413b;
   background-color: #e7e7e7;
   .hero-content {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    height: 100%;
     .hero-infos {
       max-width: 350px;
       width: 100%;
+      margin-top: 30px;
       h1 {
         color: $secondary-color;
         font-family: Inter;
@@ -111,12 +112,12 @@ $primary-color: #ff413b;
       }
     }
     .hero-img {
-      max-width: 600px;
-      width: 100%;
       align-self: self-end;
-      object-fit: contain;
-      object-position: center;
+      object-fit: cover;
+      object-position: bottom;
       height: 75vh;
+      padding-bottom: 0;
+      margin-bottom:0;
     }
   }
 }
