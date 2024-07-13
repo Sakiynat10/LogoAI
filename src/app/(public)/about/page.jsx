@@ -8,6 +8,12 @@ import PartnerCarousel from './../../../components/partner-carousel/index';
 import ContactSection from "@/components/contact";
 import AccordionSection from "@/components/accordion";
 
+export const metadata = {
+  title: "LogoAI: Ищем перевозчиков по Украине | Грузооотправителям | Перевозчикам | Диспетчерам",
+  description:
+    "Зарабатывайте от 80000 ₴ в месяц. Стабильная работа с оплатой за километраж",
+};
+
 const advantages = [
   {
     src:"/advantages-1.svg",

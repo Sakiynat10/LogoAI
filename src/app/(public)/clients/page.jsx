@@ -10,6 +10,13 @@ import AccordionSection from "@/components/accordion";
 import ContactSection from "@/components/contact";
 import Counter from "@/components/counter";
 
+export const metadata = {
+  title: "LogoAI: Вакансия для диспечеров | Грузооотправителям | Перевозчикам | Диспетчерам",
+  description:
+    "Зарабатывайте от 80000 ₴ в месяц. Стабильная работа с оплатой за километраж",
+};
+
+
 const clientsAdvantages = [
   {
     src: "/advantages-1.svg",
