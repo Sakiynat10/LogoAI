@@ -18,15 +18,16 @@ const DisVacancySection = () => {
     <Fragment>
       <div className="container">
         <h1 className="title">Доступные вакансии</h1>
+      </div>
         <Swiper
-          spaceBetween={28}
+          spaceBetween={24}
           loop={true}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
           }}
           centeredSlides={false}
-          slidesPerView={3.3}
+          slidesPerView={3.695}
           pagination={{
             clickable: false,
           }}
@@ -66,16 +67,15 @@ const DisVacancySection = () => {
             <span className="vacancy-slide-title">Диспетчер</span>
             <span className="vacancy-slide-description">Нам нужен опытный работник болле чем 3 летним стажем </span>
           </SwiperSlide>
-          <SwiperSlide>
+          {/* <SwiperSlide>
             <span className="vacancy-slide-title">Диспетчер</span>
             <span className="vacancy-slide-description">Нам нужен опытный работник болле чем 3 летним стажем </span>
           </SwiperSlide>
           <SwiperSlide>
             <span className="vacancy-slide-title">Диспетчер</span>
             <span className="vacancy-slide-description">Нам нужен опытный работник болле чем 3 летним стажем </span>
-          </SwiperSlide>
+          </SwiperSlide> */}
         </Swiper>
-      </div>
     </Fragment>
   );
 };

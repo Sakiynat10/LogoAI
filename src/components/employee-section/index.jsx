@@ -19,14 +19,15 @@ const EmployeeSection = () => {
     <Fragment>
       <div className="container">
         <h1 className='title'>Наши сотрудники</h1>
+      </div>
         <Swiper
-        spaceBetween={0}
+        spaceBetween={6}
         loop={true}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
         }}
-        slidesPerView={7}
+        slidesPerView={6.24}
         pagination={{
           clickable: false,
         }}
@@ -107,7 +108,6 @@ const EmployeeSection = () => {
                 <div className="overlay"></div>
             </SwiperSlide>
       </Swiper>
-      </div>
     </Fragment>
   )
 }
