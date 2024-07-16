@@ -1,6 +1,7 @@
 footer{
     margin-top: 23px;
     margin-bottom:23px;
+    overflow-x: hidden;
     .footer-outer{
         padding-top: 60px;
         padding-bottom: 20px;
@@ -9,11 +10,40 @@ footer{
     }
     .footer-top-content{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         margin-bottom: 10px;
+        gap: 20px;
+
+        .footer-left{
+            display: grid;
+            width: 100%;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+            ul{
+                &:nth-child(2){
+                    margin-top: 10px;
+                }
+                &:nth-child(3){
+                    margin-top: -45px;
+                }
+                &:nth-child(5){
+                    margin-top: -50px;
+                }
+                &:nth-child(4){
+                    margin-top: 10px;
+                }
+            }
+        }
+        .footer-right{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
         .footer-logo{
                 display: flex;
                 gap: 8px;
+                height: 30px !important;
                 img{
                     width: 30px;
                     height: 30px;
@@ -65,8 +95,9 @@ footer{
                 }
             }
         }
+
     }
-    
+ 
     .footer-bottom-content{
         margin-top: 10px;
         padding-top: 20px;
@@ -91,4 +122,52 @@ footer{
             }
         }
     }
+
+    @media (min-width:500px) {
+        .footer-top-content{
+            .footer-left{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                ul{
+                    &:nth-child(2){
+                        margin-top: 0px;
+                    }
+                    &:nth-child(3){
+                        margin-top: 0px;
+                    }
+                    &:nth-child(5){
+                        margin-top: 0px;
+                    }
+                    &:nth-child(4){
+                        margin-top: 0px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    @media (min-width:830px) {
+        .footer-top-content{
+            .footer-left{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: 30px;
+                width: 100%;
+            }
+        }
+    }
+
+    @media (min-width:1250px) {
+        .footer-top-content{
+           display: grid;
+           grid-template-columns: 75% 23%;
+           justify-content: space-between;
+           margin-bottom: 10px;
+           gap: 20px;
+        }
+   }
 }
+

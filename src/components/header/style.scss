@@ -10,68 +10,123 @@ header{
     z-index: 30;
     display: flex;
     align-items: center;
-    background-color: #E7E7E7;;
+    background-color: #E7E7E7;
+    .menu-top{
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        top: -100% !important;
+        padding: 20px;
+        transition: 0.5s;
+    }
+    .menu-nav{
+        top: 100%;
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        padding: 20px 0px;
+        transition: 0.5s;
+    }
+    .nav-container{
+        z-index: 30;
+        background-color: #E7E7E7;
+    }
     nav{
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
-    .nav-left{
-        display: flex;
-        align-items: center;
-        gap: 40px;
-        a{
+        height: 80px;
+        z-index: 30;
+        .nav-left{
             display: flex;
             align-items: center;
-            gap: 4px;
-            img{
-                width: 27px;
-                height:27px;
-            }
-            p{
-                font-family: Poppins;
-                font-size: 32px;
-                font-weight: 600;
-                line-height: 32px;
-                color: black;
-                span{
-                    margin-left: 5px;
-                    color: #FF413B;
+            gap: 40px;
+            a{
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                img{
+                    width: 27px;
+                    height:27px;
                 }
-            }
-        }
-        ul{
-            display: flex;
-            gap: 30px;
-            align-items: center;
-            li{
-                a{
-                    font-family: Inter;
-                    font-size: 16px;
-                    font-weight: 400;
-                    line-height: 16px;
-                    text-align: left;                
-                    color: #121212;
-                    transition: 0.5s;
-                    &:hover{
+                p{
+                    font-family: Poppins;
+                    font-size: 32px;
+                    font-weight: 600;
+                    line-height: 32px;
+                    color: black;
+                    span{
+                        margin-left: 5px;
                         color: #FF413B;
                     }
                 }
-                .active{
-                    color: #ff413b;
+            }
+            ul{
+                display: none;
+                gap: 30px;
+                align-items: center;
+                li{
+                    a{
+                        font-family: Inter;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 16px;
+                        text-align: left;                
+                        color: #121212;
+                        transition: 0.5s;
+                        &:hover{
+                            color: #FF413B;
+                        }
+                    }
+                    .active{
+                        color: #ff413b;
+                    }
                 }
             }
         }
-    }
-    .nav-right{
-        padding: 12px 32px;
-        border-radius: 50px;
-        border: 2px solid #FF413B;
-        color: #FF413B;
-        transition: 0.5s;
-        &:hover{
-            background-color: #FF413B;
-            color: #fff;
+        .nav-right{
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            .nav-right-btn{
+                padding: 12px 32px;
+                border-radius: 50px;
+                border: 2px solid #FF413B;
+                color: #FF413B;
+                transition: 0.5s;
+                &:hover{
+                    background-color: #FF413B;
+                    color: #fff;
+                }
+            }
+            button{
+                cursor: pointer;
+                background-color: transparent;
+                border:none;
+                width: 38px;
+                height: 38px;
+                img{
+                    width: 100%;
+                    transition: 0.5s;
+                }
+                .none{
+                    display: none;
+                    transition: 0.5s;
+                }
+            }
+        }
+        @media (min-width:770px) {
+            .nav-left{
+                ul{
+                    display: flex;
+                }
+            }
+            .nav-right{
+                button{
+                    display: none;
+                }
+            }
         }
     }
 }

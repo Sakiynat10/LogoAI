@@ -1,101 +1,153 @@
-$primary-color: #FF413B;
-$secondary-color:#000;
+$primary-color: #ff413b;
+$secondary-color: #000;
 
-#accordion{
-    .accordion-outer{
-        padding-top: 60px;
-        padding-bottom: 60px;
-        background-color:#fff;
+#accordion {
+  .accordion-outer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #fff;
+  }
+  h1 {
+    color: $secondary-color;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 100%; /* 72px */
+    margin-bottom: 30px;
+    span {
+      color: $primary-color;
+      font-family: Inter;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 100%;
     }
-    h1{
-        color: $secondary-color;
-        font-family: Inter;
-        font-size: 72px;
-        font-weight: 400;
-        line-height: 100%; /* 72px */
-        margin-bottom: 90px;
-        span{
-            color:  $primary-color;
-            font-family: Inter;
-            font-size: 72px;
-            font-weight: 400;
-            line-height: 100%;
-        }
-    }
-    .accordion{
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 40px;
-        align-items: start;
-        justify-content: space-between;
-       .accordion-items-left , .accordion-items-right{
-        display: flex;
-        flex-direction: column;
-        gap:20px;
-        padding-bottom: 50px;
-        .accordion-item{
-            max-width: 500px;
-            width: 100%;
-            margin-bottom: 20px;
-
-            .hide-content{
-                margin-top: -20%;
-                color: $secondary-color;
-                font-family: Inter;/* 22.4px */
-                opacity: 0.7;
-                margin-left: 40px;
-                transition: 0.3s;
-            }
-            .accordion-content{
-                margin-top: 0;
-                color: $secondary-color;
-                font-family: Inter;
-                font-size: 18px;
-                z-index: -2;
-                font-weight: 400;
-                line-height: 140%; /* 22.4px */
-                opacity: 0.7;
-                margin-left: 40px;
-                transition: 0.3s;
-            }
-        }
-    }
-        .accordion-title{
-            display: flex;
-            position: relative;
-            align-items: center;
-            gap: 10px;
-            background-color: #fff;
-            cursor: pointer;
-            z-index: 1;
-            margin-bottom:10px;
+    @media (min-width:600px){
+            font-size: 32px;
             span{
-                font-size: 24px;
-                margin-top: 10px;
-                margin-bottom:0px;
-            }
-            h3{
-                width: 500px;
-                font-size: 24px;
-                font-weight: 400 !important;
-                // margin-bottom: 30px;
-                margin-top: 30px;
-                margin-bottom: 0px;
-                padding-bottom:15px;
-                border-bottom: 2px solid #EEE;
+                font-size: 32px;
 
             }
-        }
-        .minus{
-            width: 30px;
-            height: 30px;
-            transition: 0.5s;
-            color: #FF314B;
-        }
-        .plus{
-            width: 30px;
-            height: 30px;
-            transition:0.5s;
-        }
+        
     }
+    
+    @media (min-width:800px){
+            font-size: 48px;
+            span{
+                font-size: 48px;
+
+            }
+        
+    }
+    
+    @media (min-width:1000px){
+            font-size: 64px;
+            span{
+                font-size: 64px;
+
+            }
+        
+    }
+  }
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: start;
+    justify-content: space-between;
+    .accordion-items-left,
+    .accordion-items-right {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-bottom: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      .accordion-item {
+        max-width: 320px;
+        width: 100%;
+        margin-bottom: 20px;
+        @media (min-width:600px) {
+          max-width: 400px;
+        }
+
+        .hide-content {
+          margin-top: -28%;
+          color: $secondary-color;
+          font-family: Inter; /* 22.4px */
+          opacity: 0.7;
+          margin-left: 40px;
+          transition: 0.3s;
+          @media (min-width:600px) {
+            margin-top: -20%;
+          }
+        }
+        .accordion-content {
+          margin-top: 0;
+          color: $secondary-color;
+          font-family: Inter;
+          font-size: 14px;
+          z-index: -2;
+          font-weight: 400;
+          line-height: 140%; /* 22.4px */
+          opacity: 0.7;
+          margin-left: 40px;
+          transition: 0.3s;
+          @media(min-width:500px){
+            font-size:18px;
+          }
+        }
+      }
+    }
+    .accordion-title {
+      display: flex;
+      position: relative;
+      align-items: center;
+      gap: 10px;
+      background-color: #fff;
+      cursor: pointer;
+      z-index: 1;
+      margin-bottom: 10px;
+      span {
+        font-size: 24px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+      }
+      h3 {
+        width: 500px;
+        font-size: 18px;
+        font-weight: 400 !important;
+        // margin-bottom: 30px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #eee;
+        @media (min-width:500px) {
+            font-size: 24px;
+        }
+      }
+    }
+    .minus {
+      width: 30px;
+      height: 30px;
+      transition: 0.5s;
+      color: #ff314b;
+    }
+    .plus {
+      width: 30px;
+      height: 30px;
+      transition: 0.5s;
+    }
+
+    @media (min-width: 1110px) {
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: space-between;
+      .accordion-items-left,
+      .accordion-items-right {
+        .accordion-item {
+          max-width: 500px;
+        }
+      }
+    }
+  }
 }

@@ -3,11 +3,11 @@ import "./style.scss";
 
 const HeroSection = ({ data }) => {
   return (
-    <div className="hero-content container-1320">
+    <div className="hero-content container">
       <div className="hero-infos">
         <h1>{data?.h1}</h1>
         <p>{data?.p}</p>
-        <form>
+        <form className="form-group">
           <input className="input" type="text" placeholder={data?.pl1} required />
           <input
             className="input"
