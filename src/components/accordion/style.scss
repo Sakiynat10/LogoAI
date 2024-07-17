@@ -3,8 +3,7 @@ $secondary-color: #000;
 
 #accordion {
   .accordion-outer {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 10px;
     background-color: #fff;
   }
   h1 {
@@ -72,14 +71,14 @@ $secondary-color: #000;
       margin-bottom: 20px;
       margin-left: auto;
       margin-right: auto;
-      max-width: 400px;
+      max-width: 550px;
       width: 100%;
       .accordion-item {
         max-width: 400px;
         width: 100%;
         margin-bottom: 20px;
         @media (min-width:600px) {
-          max-width: 400px;
+          max-width: 500px;
         }
 
         .hide-content {
@@ -102,7 +101,7 @@ $secondary-color: #000;
           font-weight: 400;
           line-height: 140%; /* 22.4px */
           opacity: 0.7;
-          margin-left: 30px;
+          margin-left: 55px;
           transition: 0.3s;
           @media(min-width:500px){
             font-size:18px;
@@ -127,7 +126,8 @@ $secondary-color: #000;
         margin-bottom: 0px;
       }
       h3 {
-        width: 500px;
+        max-width: 550px;
+        width:100%;
         font-size: 18px;
         font-weight: 400 !important;
         // margin-bottom: 30px;
@@ -137,21 +137,37 @@ $secondary-color: #000;
         border-bottom: 2px solid #eee;
         @media (min-width:500px) {
             font-size: 24px;
+            max-width: 750px;
+            width: 100%;
         }
       }
     }
     .minus {
-      width: 30px;
-      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
       transition: 0.5s;
-      text-align: right;
+      margin-left: 10px;
       color: #ff314b;
+      img{
+        width:24px !important;
+        height:24px !important;
+      }
     }
     .plus {
-      width: 30px;
-      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
       transition: 0.5s;
-      text-align: right;
+      margin-left: 10px;
+      img{
+        width:18px !important;
+        height:18px !important;
+      }
     }
 
     @media (min-width: 1110px) {

@@ -81,6 +81,10 @@ $secondary-color:#000;
                    position:relative;
                    max-width: 220px;
                    width:100%;
+                   &::placeholder{
+                    opacity: 0.3;
+                    font-weight: 400 !important;
+                   }
                 }
                 .select-box{
                     max-width: 120px;

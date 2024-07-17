@@ -38,8 +38,8 @@
       object-fit: contain;
       object-position: center;
       cursor: pointer;
-      padding: 5px;
-      border-radius: 12px;
+      padding: 7px;
+      border-radius: 7px;
     }
     .card{
       width: 80px;
@@ -54,7 +54,7 @@
         transition: 0.5s;
         margin-top: -10px;
         margin-bottom: 5px;
-        font-size: 9px;
+        font-size: 8px;
         text-align: center;
     }
     .active {
@@ -123,6 +123,7 @@
           margin-right: auto;
           object-fit: contain;
           bottom: 20px;
+          border-radius: 12px;
         }
       }
     }

@@ -67,7 +67,7 @@ const AccordionItem = () => {
         <div className="accordion-item">
           <div className="accordion-title" onClick={toggleOpen1}>
             <span className={isOpen1 ? "minus" : "plus"}>
-              {isOpen1 ? "-" : "+"}
+            {isOpen1 ? <img src="/minus-img.svg" alt="svg" />  : <img src="/plus-img.svg" alt="plus" /> }
             </span>
             <h3>'How much type of truck your company?'</h3>
           </div>
@@ -81,7 +81,7 @@ const AccordionItem = () => {
         <div className="accordion-item">
           <div className="accordion-title" onClick={toggleOpen2}>
             <span className={isOpen2 ? "minus" : "plus"}>
-              {isOpen2 ? "-" : "+"}
+            {isOpen2 ? <img src="/minus-img.svg" alt="svg" />  : <img src="/plus-img.svg" alt="plus" /> }
             </span>
             <h3>'How much type of truck your company?'</h3>
           </div>
@@ -93,7 +93,7 @@ const AccordionItem = () => {
         <div className="accordion-item">
           <div className="accordion-title" onClick={toggleOpen3}>
             <span className={isOpen3 ? "minus" : "plus"}>
-              {isOpen3 ? "-" : "+"}
+            {isOpen3 ? <img src="/minus-img.svg" alt="svg" />  : <img src="/plus-img.svg" alt="plus" /> }
             </span>
             <h3>'How much type of truck your company?'</h3>
           </div>
@@ -107,7 +107,7 @@ const AccordionItem = () => {
         <div className="accordion-item">
           <div className="accordion-title" onClick={toggleOpen4}>
             <span className={isOpen4 ? "minus" : "plus"}>
-              {isOpen4 ? "-" : "+"}
+              {isOpen4 ? <img src="/minus-img.svg" alt="svg" />  : <img src="/plus-img.svg" alt="plus" /> }
             </span>
             <h3>'How much type of truck your company?'</h3>
           </div>
@@ -119,7 +119,7 @@ const AccordionItem = () => {
         <div className="accordion-item">
           <div className="accordion-title" onClick={toggleOpen5}>
             <span className={isOpen5 ? "minus" : "plus"}>
-              {isOpen5 ? "-" : "+"}
+            {isOpen5 ? <img src="/minus-img.svg" alt="svg" />  : <img src="/plus-img.svg" alt="plus" /> }
             </span>
             <h3>'How much type of truck your company?'</h3>
           </div>
@@ -131,7 +131,7 @@ const AccordionItem = () => {
         <div className="accordion-item">
           <div className="accordion-title" onClick={toggleOpen6}>
             <span className={isOpen6 ? "minus" : "plus"}>
-              {isOpen6 ? "-" : "+"}
+            {isOpen6 ? <img src="/minus-img.svg" alt="svg" />  : <img src="/plus-img.svg" alt="plus" /> }
             </span>
             <h3>'How much type of truck your company?'</h3>
           </div>
