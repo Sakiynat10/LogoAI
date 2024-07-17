@@ -52,7 +52,7 @@ const Footer = () => {
             <div className="footer-right">
               <ul>
                 <li>
-                  <a href="/#contact">Контакты</a>
+                  <a className="contact-subtitle" href="/#contact">Контакты</a>
                 </li>
                 <li>
                   <a href="#">(555) 555-1234</a>

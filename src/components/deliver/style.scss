@@ -5,7 +5,7 @@
     justify-content: center;
     gap: 40px;
     .deliver-card{
-        max-width: 290px;
+        max-width: 350px;
         width: 100%;
         img{
             margin-bottom: 10px;
@@ -26,6 +26,9 @@
             font-weight: 500;
             line-height: 140%; /* 19.6px */
             opacity: 0.5;
+        }
+        @media (min-width:500px) {
+            max-width: 290px;
         }
     }
     @media (min-width:660px) {

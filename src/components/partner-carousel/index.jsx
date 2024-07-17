@@ -1,31 +1,30 @@
-"use client"
-import "./style.scss"
+"use client";
+import "./style.scss";
 
-import React from 'react';
+import React from "react";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 // import required modules
-import { Autoplay} from 'swiper/modules';
-import { partnerData } from '@/data';
+import { Autoplay } from "swiper/modules";
+import { partnerData } from "@/data";
 
 export default function PartnerCarousel() {
   return (
     <>
-      <Swiper
+      {/* <Swiper
         spaceBetween={30}
         loop={true}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
         }}
-        slidesPerView={4.5}
+        slidesPerView={1.1}
         pagination={{
           clickable: false,
         }}
@@ -43,8 +42,33 @@ export default function PartnerCarousel() {
               </div>
             </SwiperSlide>
             ))}
-      </Swiper>
+      </Swiper> */}
+      <div className="stock-ticker">
+        <ul>
+          {partnerData.map((el, i) => (
+            <li key={i} className={i%2===0 ?"partner-card odd":"partner-card even"}>
+              <div>
+                <h2>{el.h1}</h2>
+                <img src={el.src} alt={el.h1} />
+                <h3>{el.h2}</h3>
+                <p>{el.p}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+        <ul className="partner-data-2">
+          {partnerData.map((el, i) => (
+            <li key={i} className={i%2===0 ?"partner-card odd":"partner-card even"}>
+              <div>
+                <h2>{el.h1}</h2>
+                <img src={el.src} alt={el.h1} />
+                <h3>{el.h2}</h3>
+                <p>{el.p}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
     </>
   );
 }
-

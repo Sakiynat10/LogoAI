@@ -47,7 +47,7 @@ const AboutPage = () => {
         </div>
         </div>
       </section>
-      {/* <section id="advantage">
+      <section id="advantage">
         <div className="container-outer advantage-outer">
         <AdvantageSection advantages={advantages} />
         </div>
@@ -73,7 +73,7 @@ const AboutPage = () => {
         <div className="container-outer contact-outer">
         <ContactSection/>
         </div>
-      </section> */}
+      </section>
     </Fragment>
   );
 };

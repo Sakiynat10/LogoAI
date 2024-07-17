@@ -2,7 +2,7 @@ $secondary-color: #000;
 $primary-color: #ff413b;
 
 #hero {
-  padding-top: 148px;
+  padding: 148px 10px 0px;
   overflow-x: hidden;
   .hero-content {
     display: flex;
@@ -121,14 +121,19 @@ $primary-color: #ff413b;
         }
       }
     }
-    .hero-img {
-      max-width: 500px;
+    .hero-img-content{
+      overflow: hidden;
+      height: 450px;
+      max-width: 450px;
       width: 100%;
-      margin-top: 20px;
+    }
+    .hero-img {
+      width: 450px;
+      margin-bottom: 0;
+      height: 100%;
       align-self: self-end;
       object-fit: contain;
       object-position: center;
-      width: 100%;
       padding-bottom: 0;
       margin-bottom: 0;
       margin-left: auto;
@@ -136,7 +141,7 @@ $primary-color: #ff413b;
     }
   }
 
-  @media (min-width: 830px) {
+  @media (min-width: 880px) {
     .hero-content {
       flex-direction: row;
       align-items: normal;
@@ -159,37 +164,53 @@ $primary-color: #ff413b;
           }
         }
       }
+      .hero-img-content{
+        overflow: hidden;
+        max-width: 600px;
+        height: 75vh;
+        width: 100%;
+      }
       .hero-img {
-        max-width: 450px;
+        height: 100%;
+        max-width: 600px;
         width: 100%;
       }
     }
   }
 
   @media (min-width: 1067px) {
-    height: 95vh;
     .hero-content {
       flex-direction: row;
       align-items: normal;
       justify-content: space-between;
       .hero-img {
+        max-width: 600px;
+        width: 100%;
+      }
+      .hero-img-content{
         height: 75vh;
         max-width: 600px;
         width: 100%;
       }
     }
   }
-  @media (min-width: 1167px) {
-    height: 95vh;
-    .hero-content {
-      flex-direction: row;
-      align-items: normal;
-      justify-content: space-between;
-      .hero-img {
-        height: 75vh;
-        max-width: 1000px;
-        width: 100%;
-      }
-    }
-  }
+  // @media (min-width: 1167px) {
+  //   height: 95vh;
+  //   .hero-content {
+  //     flex-direction: row;
+  //     align-items: normal;
+  //     justify-content: space-between;
+  //     .hero-img {
+  //       max-width: 600px;
+  //       width: 100%;
+  //       height: 100%;
+  //     }
+  //     .hero-img-content{
+  //       overflow: hidden;
+  //       height: 75vh;
+  //       max-width: 600px;
+  //       width: 100%;
+  //     }
+  //   }
+  // }
 }

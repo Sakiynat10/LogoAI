@@ -11,7 +11,7 @@ const HeroSection = ({ data }) => {
           <input className="input" type="text" placeholder={data?.pl1} required />
           <input
             className="input"
-            type="text"
+            type={data?.pl2 === "Номер" ? "number"  : "text"}
             placeholder={data?.pl2}
             required
           />
@@ -25,7 +25,9 @@ const HeroSection = ({ data }) => {
           </div>
         </form>
       </div>
+      <div className="hero-img-content">
       {data?.src ?<img className="hero-img" src={`${data?.src}`} alt="hero truck" /> :  " "}
+      </div>
     </div>
   );
 };

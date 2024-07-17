@@ -2,7 +2,6 @@
             margin-bottom:40px;
          }
         .employee-slider{
-            background-color: red;
             width: 228px !important;
             position: relative;
             border-radius:16px;
@@ -64,4 +63,17 @@
         }
         .employee-outer{
             background-color: #fff;
+        }
+
+        .mySwiper{
+            display:none;
+            @media (min-width:1330px) {
+                display:flex;
+            }
+        }
+
+        .marquee{
+            @media (min-width:1330px){
+                display:none !important;
+            }
         }

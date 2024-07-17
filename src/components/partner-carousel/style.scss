@@ -2,32 +2,32 @@ $primary-color:#FF413B;;
 $secondary-color:#000;
 
 .partner-card{
-    width: 400px !important;
+    width: 350px !important;
     display: flex;
     flex-direction:column;
     align-items: flex-start;
     justify-content: flex-start;
     border-radius: 12px;
-    padding: 54px 80px 18px 33px !important;
+    padding: 54px 80px 0px 33px !important;
     h2{
         color: #FFF;
-        font-size: 31px;
+        font-size: 28px;
         font-weight: 800;
         line-height: 100%; /* 36px */
         margin-bottom: 10px;
     }
  
     img{
-        max-width: 100px;
+        max-width: 80px;
         margin-left: 0;
         width: 100%;
-        height:85px !important;
+        height:65px !important;
         margin-bottom: 20px;
     }
     h3{
         color: #FFF;
         font-family: Inter;
-        font-size: 22px;
+        font-size: 18px;
         font-weight: 600;
         line-height: 100%; /* 20px */
         margin-bottom: 18px;
@@ -35,12 +35,55 @@ $secondary-color:#000;
     p{
         color: #FFF !important;
         font-family: Inter;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 400;
         line-height: 18px;
         max-width: 275px;
+        margin-left: 0 !important;
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+    }
+    @media (min-width:700px) {
+        width: 400px !important;
+        display: flex;
+        flex-direction:column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        border-radius: 12px;
+        padding: 54px 80px 18px 33px !important;
+        h2{
+            color: #FFF;
+            font-size: 31px;
+            font-weight: 800;
+            line-height: 100%; /* 36px */
+            margin-bottom: 10px;
+        }
+     
+        img{
+            max-width: 100px;
+            margin-left: 0;
+            width: 100%;
+            height:85px !important;
+            margin-bottom: 20px;
+        }
+        h3{
+            color: #FFF;
+            font-family: Inter;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 100%; /* 20px */
+            margin-bottom: 18px;
+        }
+        p{
+            color: #FFF !important;
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            max-width: 275px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
     }
 }
 .odd{
@@ -54,4 +97,29 @@ $secondary-color:#000;
 }
 .even{
     background-color: $primary-color;
+}
+
+.stock-ticker{
+    overflow: hidden;
+    padding-block: 8px;
+    display:flex;
+    ul{
+        flex-shrink: 0;
+        min-width:100%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        animation:scroll 20s linear infinite;
+    }
+
+    .partner-data-2{
+        margin-left: 20px;
+    }
+
+    @keyframes scroll {
+        to {
+            transform: translateX(-100%);
+        }
+    }
 }

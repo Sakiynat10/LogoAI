@@ -255,6 +255,12 @@ $secondary-color: #000;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #e7e7e7;
+  .range-container{
+    max-width: 97vw;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   h2 {
     font-family: Inter;
     font-size: 22px;
@@ -382,6 +388,7 @@ $secondary-color: #000;
 
 #deliver {
   .deliver-outer {
+    padding: 0 10px;
     padding-top: 90px;
     padding-bottom: 90px;
     border-radius: 32px;
@@ -772,6 +779,7 @@ $secondary-color: #000;
 
 #contact {
   .contact-home-outer {
+    padding: 0px 0px 0px 10px;
     border-top-left-radius: 0px !important;
     border-top-right-radius: 0px !important;
     border-bottom-left-radius: 0px !important;

@@ -24,12 +24,13 @@ export default function Home() {
       </section>
       <section id="service">
         <div className="container-outer service-outer">
-          <div className="container">
+          <div className="container service-container">
             <ServiceCards />
           </div>
         </div>
       </section>
       <section id="range">
+        <div className="range-container">
         <div className="container">
           <h2>Тип автомобиля</h2>
           <div className="range-content">
@@ -66,6 +67,7 @@ export default function Home() {
             </div>
             <Slider />
           </div>
+        </div>
         </div>
       </section>
       <section id="deliver">
