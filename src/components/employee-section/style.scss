@@ -66,9 +66,9 @@
         }
 
         .mySwiper{
-            display:none;
+            display:none !important;
             @media (min-width:1330px) {
-                display:flex;
+                display:flex !important;
             }
         }
 
