@@ -715,6 +715,10 @@ $secondary-color: #000;
         justify-content: center;
         margin-bottom: -10px;
         transition: 0.5s;
+        img{
+          width:15px;
+          height: 15px;
+        }
         &:hover {
           border: 1px solid $primary-color;
         }
@@ -773,6 +777,10 @@ $secondary-color: #000;
           align-items: center;
           justify-content: center;
           transition: 0.5s;
+          img{
+            width:30px;
+            height: 30px;
+          }
           &:hover {
             border: 1px solid $primary-color;
           }

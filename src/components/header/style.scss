@@ -4,7 +4,7 @@
 
 header{
     position: fixed;
-    padding: 0 10px;
+    z-index: 500;
     width: 100%;
     top: 0;
     height: 80px;
@@ -35,7 +35,6 @@ header{
         align-items: start;
         justify-content: left;
         padding-top: 40px;
-        padding-left: 10px;
         a{
             font-size: 18px;
             color: #000;
@@ -44,6 +43,7 @@ header{
             display: flex;
             flex-direction: column;
             gap: 20px;
+            padding-left: 10px;
             li{
                 .active{
                     color: #FF413B;
@@ -56,8 +56,12 @@ header{
 
     }
     .nav-container{
+        padding: 0 10px;
         z-index: 30;
         background-color: #E7E7E7;
+        @media (min-width:1290px) {
+            padding:0px !important;
+        }
     }
     nav{
         display: flex;
