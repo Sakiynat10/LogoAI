@@ -109,6 +109,12 @@ $secondary-color:#000;
     }
 }
 
+#advantage{
+    .advantage-outer{
+        border-radius:0px !important;
+    }
+}
+
 #contact{
     .contact-outer{
         padding-top: 90px;
