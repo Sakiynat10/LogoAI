@@ -1,10 +1,10 @@
 import React, { Fragment } from "react";
-import HeroSection from "./../../../components/hero-section/index";
+import HeroSection from "../../../components/hero-section/index";
 import OrderCard from "@/components/order-card";
 import "./style.scss";
 import AdvantageSection from "@/components/advantage-section";
 import { aboutData, order, partnerData } from "@/data";
-import PartnerCarousel from './../../../components/partner-carousel/index';
+import PartnerCarousel from '../../../components/partner-carousel/index';
 import ContactSection from "@/components/contact";
 import AccordionSection from "@/components/accordion";
 

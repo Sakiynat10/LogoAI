@@ -18,10 +18,10 @@ const Header = () => {
               <NavLink onClick={changeMenu} href="/">Грузооотправителям</NavLink>
             </li>
             <li>
-              <NavLink onClick={changeMenu} href="/about">Перевозчикам</NavLink>
+              <NavLink onClick={changeMenu} href="/carriers">Перевозчикам</NavLink>
             </li>
             <li>
-              <NavLink onClick={changeMenu} href="/clients">Диспетчерам</NavLink>
+              <NavLink onClick={changeMenu} href="/dispatchers">Диспетчерам</NavLink>
             </li>
           </ul>
       </nav>
@@ -35,10 +35,10 @@ const Header = () => {
               <NavLink href="/">Грузооотправителям</NavLink>
             </li>
             <li>
-              <NavLink href="/about">Перевозчикам</NavLink>
+              <NavLink href="/carriers">Перевозчикам</NavLink>
             </li>
             <li>
-              <NavLink href="/clients">Диспетчерам</NavLink>
+              <NavLink href="/dispatchers">Диспетчерам</NavLink>
             </li>
           </ul>
         </div>
