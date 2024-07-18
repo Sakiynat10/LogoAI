@@ -5,7 +5,7 @@
         background-color: #fff;
     }
     .swiper-slide{
-        width: 380px !important;
+        width: 300px !important;
         position: relative;
         border-radius:16px;
         height: 200px;
@@ -28,13 +28,28 @@
             position:absolute;
             bottom: 24px;
             left: 16px;
-            max-width: 302px;
+            max-width: 280px;
             width:100%;
             color: #000;
             font-family: Inter;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 400;
             line-height: 140%; /* 25.2px */
+        }
+        @media (min-width:600px) {
+            width:380px !important;
+            .vacancy-slide-description{
+                position:absolute;
+                bottom: 24px;
+                left: 16px;
+                max-width: 302px;
+                width:100%;
+                color: #000;
+                font-family: Inter;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 140%; /* 25.2px */
+            }
         }
     }
 }
