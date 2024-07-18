@@ -70,14 +70,38 @@ const DisVacancySection = () => {
             <span className="vacancy-slide-title">Диспетчер</span>
             <span className="vacancy-slide-description">Нам нужен опытный работник болле чем 3 летним стажем </span>
           </SwiperSlide>
-          {/* <SwiperSlide>
+          <SwiperSlide>
             <span className="vacancy-slide-title">Диспетчер</span>
             <span className="vacancy-slide-description">Нам нужен опытный работник болле чем 3 летним стажем </span>
           </SwiperSlide>
           <SwiperSlide>
             <span className="vacancy-slide-title">Диспетчер</span>
             <span className="vacancy-slide-description">Нам нужен опытный работник болле чем 3 летним стажем </span>
-          </SwiperSlide> */}
+          </SwiperSlide>
+          <SwiperSlide>
+            <span className="vacancy-slide-title">Диспетчер</span>
+            <span className="vacancy-slide-description">Нам нужен опытный работник болле чем 3 летним стажем </span>
+          </SwiperSlide>
+          <SwiperSlide>
+            <span className="vacancy-slide-title">Диспетчер</span>
+            <span className="vacancy-slide-description">Нам нужен опытный работник болле чем 3 летним стажем </span>
+          </SwiperSlide>
+          <SwiperSlide>
+            <span className="vacancy-slide-title">Диспетчер</span>
+            <span className="vacancy-slide-description">Нам нужен опытный работник болле чем 3 летним стажем </span>
+          </SwiperSlide>
+          <SwiperSlide>
+            <span className="vacancy-slide-title">Диспетчер</span>
+            <span className="vacancy-slide-description">Нам нужен опытный работник болле чем 3 летним стажем </span>
+          </SwiperSlide>
+          <SwiperSlide>
+            <span className="vacancy-slide-title">Диспетчер</span>
+            <span className="vacancy-slide-description">Нам нужен опытный работник болле чем 3 летним стажем </span>
+          </SwiperSlide>
+          <SwiperSlide>
+            <span className="vacancy-slide-title">Диспетчер</span>
+            <span className="vacancy-slide-description">Нам нужен опытный работник болле чем 3 летним стажем </span>
+          </SwiperSlide>
         </Swiper>
         <Marquee         
         pauseOnHover={true}
