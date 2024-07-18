@@ -89,7 +89,7 @@ const ClientPage = () => {
         <HeroSection data={clientsData} />
       </section>
       <section id="advantage">
-        <div className="container-outer advantage-outer">
+        <div className="container-outer advantage-outer advantage-client-outer">
           <AdvantageSection advantages={clientsAdvantages} />
         </div>
       </section>
