@@ -48,7 +48,7 @@ const AboutPage = () => {
         </div>
       </section>
       <section id="advantage">
-        <div className="container-outer advantage-outer">
+        <div className="container-outer advantage-outer advantage-carrier-outer">
         <AdvantageSection advantages={advantages} />
         </div>
       </section>
