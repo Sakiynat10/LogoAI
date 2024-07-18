@@ -141,42 +141,42 @@ $primary-color: #ff413b;
     }
   }
 
-  @media (min-width: 880px) {
-    .hero-content {
-      flex-direction: row;
-      align-items: normal;
-      justify-content: space-between;
-      .hero-infos {
-        form {
-          input {
-            font-size: 16px;
-          }
-          &::before {
-            top: 5%;
-          }
-          &::after {
-            top: 35%;
-          }
-          .contact-group {
-            p {
-              font-size: 16px !important;
-            }
-          }
-        }
-      }
-      .hero-img-content{
-        overflow: hidden;
-        max-width: 600px;
-        height: 75vh;
-        width: 100%;
-      }
-      .hero-img {
-        height: 100%;
-        max-width: 600px;
-        width: 100%;
-      }
-    }
-  }
+  // @media (min-width: 880px) {
+  //   .hero-content {
+  //     flex-direction: row;
+  //     align-items: normal;
+  //     justify-content: space-between;
+  //     .hero-infos {
+  //       form {
+  //         input {
+  //           font-size: 16px;
+  //         }
+  //         &::before {
+  //           top: 5%;
+  //         }
+  //         &::after {
+  //           top: 35%;
+  //         }
+  //         .contact-group {
+  //           p {
+  //             font-size: 16px !important;
+  //           }
+  //         }
+  //       }
+  //     }
+  //     .hero-img-content{
+  //       overflow: hidden;
+  //       max-width: 600px;
+  //       height: 75vh;
+  //       width: 100%;
+  //     }
+  //     .hero-img {
+  //       height: 100%;
+  //       max-width: 600px;
+  //       width: 100%;
+  //     }
+  //   }
+  // }
 
   @media (min-width: 1067px) {
     .hero-content {
