@@ -12,7 +12,7 @@ const Header = () => {
   }
   return (
     <header>
-      <nav className={menu ? "menu-nav "  : "menu-top menu-nav"}>
+      <nav onClick={changeMenu} className={menu === false ? "menu-top menu-nav webkit"  : "menu-nav"}>
       <ul>
             <li>
               <NavLink onClick={changeMenu} href="/">Грузооотправителям</NavLink>

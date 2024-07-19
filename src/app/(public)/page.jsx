@@ -19,7 +19,7 @@ export const metadata = {
 export default function Home() {
   return (
     <Fragment>
-      <section id="hero">
+      <section id="hero" >
         <HeroSection data={data} />
       </section>
       <section id="service">
